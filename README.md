@@ -4,7 +4,7 @@
 
 ## TIMELINE:
 
-- 1 days (Oct 15 - Oct 16)
+- 14 days(Feb 10 - Feb 27)
 
 ## TARGET:
 
@@ -22,11 +22,11 @@
 
 ## WEB DESIGN:
 
-- [Design](https://www.figma.com/file/HGf2Vzkk3YieUGPIpmW7dm/Hofmann-UI-Kit---2?node-id=5033%3A3)
+- [Design](https://www.figma.com/design/fOJ0r3i3A4uoiqEqnZFXpe/Design-html%2Fcss)
 
 ## SOURCE CODE
 
-- Step1: Clone project : git clone [git](https://github.com/baonguyen26/html-css.git)
+- Step1: Clone project : git clone [git](https://github.com/nabe39/Practice-HTML-CSS.git)
 
 ## HOW TO RUN
 
@@ -35,7 +35,7 @@
 - Install the dependencies and devDependencies and start the server.
 
 ```sh
-cd html-css
+cd Practice-HTML-CSS
 pnpm i
 pnpm dev
 Open on web: http://localhost:1234
