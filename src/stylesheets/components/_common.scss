@@ -4,15 +4,14 @@
 // @forward "title";
 
 .container {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
 
-  @include tablet {
-    max-width: 720px;
-  }
+  // @include tablet {
+  //   max-width: 720px;
+  // }
 
-  @include mobile {
-    padding: 0 15px;
-    max-width: inherit;
-  }
+  // @include mobile {
+  //   max-width: 480px;
+  // }
 }
