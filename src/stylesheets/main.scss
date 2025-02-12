@@ -1,6 +1,4 @@
-$color: #fff;
-$background: blue;
-body{
-    background-color: $background ;
-    color: $color;
-}
+@use "base";
+@use "components";
+@use "layout/" as *;
+@use "pages";
