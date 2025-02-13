@@ -116,10 +116,7 @@
       width: 100%;
     }
 
-    @include mobile {
-      display: none;
-    }
-
+    //title hero page on left
     .title-hero-page {
       display: block;
       width: 50%;
@@ -142,11 +139,11 @@
           width: 230px;
           height: 56px;
           @include flex($align: center, $justify: center);
-
         }
       }
     }
 
+    //hero img on right
     .hero-img {
       @include flex($direction: column);
       width: 50%;
@@ -196,6 +193,49 @@
           border-radius: 0 0 20px 20px;
         }
       }
+    }
+
+    // ViewPoint mobile
+    @include mobile {
+      @include flex($direction: column);
+      padding: 10% 5%;
+      text-align: center;
+
+      //title hero on left
+      .title-hero-page {
+        display: block;
+        width: 100%;
+
+        .title-hero {
+          padding-right: 0;
+          .title-hero-1 {
+            h1 {
+              font-size: pxToRem(32);
+              line-height: pxToRem(35.2);
+            }
+          }
+          .title-hero-2 {
+            margin: 5% 0;
+          }
+        }
+        .title-hero-action {
+          @include flex($direction: row, $gap: 16);
+          padding-right: 0;
+          button {
+            width: 172px;
+            height: 40px;
+            font-size: pxToRem(14);
+            font-weight: 500;
+            line-height: pxToRem(14);
+            @include flex($align: center, $justify: center);
+          }
+        }
+      }
+    }
+
+    //hero img on right
+    .hero-img{
+      width: 100%;
     }
   }
 }
