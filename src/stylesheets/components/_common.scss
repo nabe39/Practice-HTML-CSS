@@ -1,7 +1,7 @@
 @use "../abstracts/" as *;
 @forward "button";
-// @forward "card";
-// @forward "title";
+@forward "card";
+@forward "title";
 
 .container {
   width: 100%;

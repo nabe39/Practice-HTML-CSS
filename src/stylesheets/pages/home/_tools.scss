@@ -1,0 +1,16 @@
+@use "../../abstracts/" as *;
+
+/******* Tools Page *******/
+
+.tools {
+  padding: 80px;
+  // height: 532px;
+  @include flex($direction: column);
+  .contain-button-action{
+    text-align: center;
+  }
+
+  @include mobile{
+    padding: 2%;
+  }
+}
