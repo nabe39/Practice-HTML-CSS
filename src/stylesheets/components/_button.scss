@@ -7,7 +7,9 @@
   cursor: pointer;
   color: $text-third-color;
   background-color: $second-color;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: pxToRem(20);
+  line-height: pxToRem(20);
 }
 
 .primary{
