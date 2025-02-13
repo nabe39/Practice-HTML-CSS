@@ -20,7 +20,10 @@
   $direction: false,
   $align: false,
   $justify: false,
-  $wrap: false
+  $wrap: false,
+  $gap: false, 
+  $flex: false,
+  $flex-basic: false
 ) {
   display: $display;
   @if $direction {
@@ -34,6 +37,15 @@
   }
   @if $wrap {
     flex-wrap: $wrap;
+  }
+  @if $gap {
+    gap: $gap;
+  }
+  @if $flex {
+    gap: $flex;
+  }
+  @if $flex-basic{
+    flex-basis: $flex-basic;
   }
 }
 
