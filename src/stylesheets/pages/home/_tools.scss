@@ -11,6 +11,11 @@
   }
 
   @include mobile{
-    padding: 2%;
+    align-items: center;
+    padding: 10% 5%;
+    .tools-cards{
+      width: 60%;
+      margin: 10% 0;
+    }
   }
 }
