@@ -1,3 +1,93 @@
 <main>
-    <h2>main</h2>
+  <!-- Tools section -->
+  <section class="tools">
+    <include
+      src="./components/title.html"
+      locals='{"titlePrimary": "The tools you need", "titleSecondary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."}'
+    ></include>
+
+    <!-- Tools Cards -->
+    <div class="tools-cards cards">
+      <!-- Start tools card -->    
+      <include
+        src="./components/card.html"
+        locals='{"class": "tools-card", "cardImage": "../assets/icon/ic_calendar.svg", "cardName": "ic_calendar", "contentCard":"Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse."}'
+      >
+      </include>
+      <include
+        src="./components/card.html"
+        locals='{"class": "tools-card", "cardImage": "../assets/icon/ic_luggage.svg", "cardName": "ic_luggage", "contentCard":"Id eros pellentesque facilisi id mollis faucibus commodo enim."}'
+      >
+      </include>
+      <include
+        src="./components/card.html"
+        locals='{"class": "tools-card", "cardImage": "../assets/icon/ic_activity.svg", "cardName": "ic_activity", "contentCard":"Nunc, pellentesque velit malesuada non massa arcu."}'
+      >
+      </include>
+      <include
+        src="./components/card.html"
+        locals='{"class": "tools-card", "cardImage": "../assets/icon/ic_car.svg", "cardName": "ic_car", "contentCard":"Imperdiet purus pellentesque sit mi nibh sit integer faucibus."}'
+      >
+      </include>
+    </div>
+
+    <!-- Tools button actions -->
+    <include
+      src="./components/button-primary.html"
+      locals='{"classButton": "tools-button"}'
+    >
+    </include>
+  </section>
+
+  <!-- Company Section -->
+  <section class="company">
+    <!-- title -->
+    <include
+      src="./components/title.html"
+      locals='{"titlePrimary": "You Are in GooD Company", "titleSecondary": "Bibendum amet at molestie mattis."}'
+    ></include>
+    <div class="title-third">
+      <p>
+        Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit
+        nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut.
+        Non, amet, aliquet scelerisque nullam sagittis, pulvinar. Fermentum
+        scelerisque sit consectetur hac mi. Mollis leo eleifend ultricies purus
+        iaculis.
+      </p>
+    </div>
+
+    <!-- logo company -->
+    <div class="company-cards cards">
+      <include
+        src="./components/card.html"
+        locals='{"class": "company-card", "cardImage": "../assets/image/desktop/logo_shells.png", "cardName": "logo_shells", "contentCard":""}'
+      >
+      </include>
+      <include
+        src="./components/card.html"
+        locals='{"class": "company-card", "cardImage": "../assets/image/desktop/logo_smartFinder.png", "cardName": "logo_smartFinder", "contentCard":""}'
+      >
+      </include>
+      <include
+        src="./components/card.html"
+        locals='{"class": "company-card", "cardImage": "../assets/image/desktop/logo_zoomerr.png", "cardName": "logo_zoomerr", "contentCard":""}'
+      >
+      </include>
+      <include
+        src="./components/card.html"
+        locals='{"class": "company-card", "cardImage": "../assets/image/desktop/logo_artVenue.png", "cardName": "logo_artVenue", "contentCard":""}'
+      >
+      </include>
+      <include
+        src="./components/card.html"
+        locals='{"class": "company-card", "cardImage": "../assets/image/desktop/logo_kontrastr.png", "cardName": "logo_kontrastr", "contentCard":""}'
+      >
+      </include>
+      <include
+        src="./components/card.html"
+        locals='{"class": "company-card", "cardImage": "../assets/image/desktop/logo_wavesmarathon.png", "cardName": "logo_wavesmarathon", "contentCard":""}'
+      >
+      </include>
+    </div>
+  </section>
 </main>
