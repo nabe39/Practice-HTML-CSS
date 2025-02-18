@@ -11,37 +11,33 @@
     <!-- Tools Cards -->
     <div class="tools-cards cards">
       <!-- Start tools card -->
-      <article>
-        <div class="tools-card card">
-          <img src="../assets/icon/ic_calendar.svg" alt="ic_calendar" />
-          <p></p>
-            Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.
-          </p>
-        </div>
-      </article>
-      <article>
-        <div class="tools-card card">
-          <img src="../assets/icon/ic_luggage.svg" alt="ic_luggage" />
-          <p>Id eros pellentesque facilisi id mollis faucibus commodo enim.</p>
-        </div>
-      </article>
-      <article>
-        <div class="tools-card card">
-          <img src="../assets/icon/ic_activity.svg" alt="ic_activity" />
-          <p>Nunc, pellentesque velit malesuada non massa arcu.</p>
-        </div>
-      </article>
-      <article>
-        <div class="tools-card card">
-          <img src="../assets/icon/ic_car.svg" alt="ic_car" />
-          <p>Imperdiet purus pellentesque sit mi nibh sit integer faucibus.</p>
-        </div>
-      </article>
+      <include
+        src="./components/card.html"
+        locals='{"class": "tools-card", "cardImage": "../assets/icon/ic_calendar.svg", "cardName": "ic_calendar"}'
+      >
+      </include>
+      <include
+        src="./components/card.html"
+        locals='{"class": "tools-card", "cardImage": "../assets/icon/ic_luggage.svg", "cardName": "ic_luggage"}'
+      >
+      </include>
+      <include
+        src="./components/card.html"
+        locals='{"class": "tools-card", "cardImage": "../assets/icon/ic_activity.svg", "cardName": "ic_activity"}'
+      >
+      </include>
+      <include
+        src="./components/card.html"
+        locals='{"class": "tools-card", "cardImage": "../assets/icon/ic_car.svg", "cardName": "ic_car"}'
+      >
+      </include>
     </div>
 
     <!-- Tools button actions -->
-    <div class="contain-button-action">
-      <button class="btn-tools-action btn primary">Primary Action</button>
-    </div>
+    <include
+      src="./components/button-primary.html"
+      locals='{"classButton": "tools-button"}'
+    >
+    </include>
   </section>
 </main>
