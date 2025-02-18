@@ -1,3 +1,41 @@
 <main>
-    <h2>main</h2>
+  <!-- Tools section -->
+  <section class="tools">
+    <include
+      src="./components/title.html"
+      locals='{"titlePrimary": "The tools you need", "titleSecondary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."}'
+    ></include>
+
+    <!-- Tools Cards -->
+    <div class="tools-cards cards">
+      <!-- Start tools card -->
+      <include
+        src="./components/card.html"
+        locals='{"class": "tools-card", "cardImage": "../assets/icon/ic_calendar.svg", "cardName": "ic_calendar", "contentCard":"Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse."}'
+      >
+      </include>
+      <include
+        src="./components/card.html"
+        locals='{"class": "tools-card", "cardImage": "../assets/icon/ic_luggage.svg", "cardName": "ic_luggage", "contentCard":"Id eros pellentesque facilisi id mollis faucibus commodo enim."}'
+      >
+      </include>
+      <include
+        src="./components/card.html"
+        locals='{"class": "tools-card", "cardImage": "../assets/icon/ic_activity.svg", "cardName": "ic_activity", "contentCard":"Nunc, pellentesque velit malesuada non massa arcu."}'
+      >
+      </include>
+      <include
+        src="./components/card.html"
+        locals='{"class": "tools-card", "cardImage": "../assets/icon/ic_car.svg", "cardName": "ic_car", "contentCard":"Imperdiet purus pellentesque sit mi nibh sit integer faucibus."}'
+      >
+      </include>
+    </div>
+
+    <!-- Tools button actions -->
+    <include
+      src="./components/button-primary.html"
+      locals='{"classButton": "tools-button"}'
+    >
+    </include>
+  </section>
 </main>
