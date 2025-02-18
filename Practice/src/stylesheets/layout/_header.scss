@@ -219,7 +219,7 @@
           }
         }
         .title-hero-action {
-          @include flex($direction: row, $gap: 16);
+          @include flex($direction: row, $gap: 16px);
           padding-right: 0;
           button {
             width: 172px;
