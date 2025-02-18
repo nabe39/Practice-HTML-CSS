@@ -2,31 +2,20 @@
   <div class="container">
     <!-- Start of header top -->
     <div class="header-main_top">
-      <a href="#" class="header-main_logo desktop">
+      <!-- <a href="#" class="header-main_logo desktop">
         <img src="../assets/image/desktop/logo.png" alt="Logo Company" />
-      </a>
+      </a> -->
+      <include
+        src="./components/logo.html"
+        locals='{"device": "desktop"}'
+      ></include>
 
       <!-- Start of navigation -->
       <!-- navigation for desktop and tablet  -->
-      <nav class="desktop">
-        <ul class="menu_list">
-          <li>
-            <a href="#" class="title--third link-main menu__link">Eleven</a>
-          </li>
-          <li>
-            <a href="#" class="title--third link-main menu__link">Twelve</a>
-          </li>
-          <li>
-            <a href="#" class="title--third link-main menu__link">Thirteen</a>
-          </li>
-          <li>
-            <a href="#" class="title--third link-main menu__link"
-              >Sixteen
-              <img src="../assets/icon/ic_arrow_down.svg" alt="ic_arrow_down"
-            /></a>
-          </li>
-        </ul>
-      </nav>
+      <include
+        src="./components/navbar.html"
+        locals='{ "device": "desktop" }'
+      ></include>
 
       <div class="menu_actions desktop">
         <button class="btn">Log In</button>
@@ -35,30 +24,19 @@
 
       <!-- ViewPoint: Mobile -->
       <!-- logo Mobile -->
-      <a href="#" class="header-main_logo mobile">
+      <!-- <a href="#" class="header-main_logo mobile">
         <img src="../assets/image/mobile/logo_mobile.png" alt="Logo Company" />
-      </a>
+      </a> -->
+      <include
+        src="./components/logo.html"
+        locals='{"device": "mobile"}'
+      ></include>
 
       <!-- navigation for mobile  -->
-      <nav class="mobile">
-        <ul class="menu_list">
-          <li>
-            <a href="#" class="title--third link-main menu__link">Eleven</a>
-          </li>
-          <li>
-            <a href="#" class="title--third link-main menu__link">Twelve</a>
-          </li>
-          <li>
-            <a href="#" class="title--third link-main menu__link">Thirteen</a>
-          </li>
-          <li>
-            <a href="#" class="title--third link-main menu__link"
-              >Sixteen
-              <img src="../assets/icon/ic_arrow_down.svg" alt="ic_arrow_down"
-            /></a>
-          </li>
-        </ul>
-      </nav>
+      <include
+        src="./components/navbar.html"
+        locals='{ "device": "mobile" }'
+      ></include>
 
       <div class="menu_actions mobile">
         <button class="btn">Log In</button>
@@ -100,17 +78,12 @@
       </div>
       <div class="hero-img">
         <div class="hero-img-top">
-          <div class="ic-circle">
-            <a href="">
-              <img src="../assets/icon/ic_f-circle.svg" alt="ic_f-circle" />
-            </a>
-            <a href="">
-              <img src="../assets/icon/ic_f-circle.svg" alt="ic_f-circle" />
-            </a>
-            <a href="">
-              <img src="../assets/icon/ic_f-circle.svg" alt="ic_f-circle" />
-            </a>
-          </div>
+          <include
+            src="./components/icon-list.html"
+            locals='{
+            "icons": ["ic_f-circle.svg", "ic_f-circle.svg", "ic_f-circle.svg"]
+          }'
+          ></include>
           <div class="ic-arrow">
             <a href="">
               <img
@@ -126,11 +99,10 @@
             </a>
           </div>
         </div>
-        <div class="hero-img-bottom">
+        <figure class="hero-img-bottom">
           <img src="../assets/image/desktop/hero_video.png" alt="" />
-        </div>
+        </figure>
       </div>
     </div>
-    
   </div>
 </header>
