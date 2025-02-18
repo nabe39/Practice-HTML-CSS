@@ -1,34 +1,35 @@
 <main>
   <!-- Tools section -->
   <section class="tools">
-    <div class="title">
+    <!-- <div class="title">
       <h2 class="title-primary">The tools you need</h2>
       <span class="title-secondary"
         >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span
       >
-    </div>
+    </div> -->
+    <include src="./components/title.html" locals='{"titlePrimary": "The tools you need", "titleSecondary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."}''></include>
 
     <!-- Tools Cards -->
     <div class="tools-cards cards">
       <!-- Start tools card -->
       <include
         src="./components/card.html"
-        locals='{"class": "tools-card", "cardImage": "../assets/icon/ic_calendar.svg", "cardName": "ic_calendar"}'
+        locals='{"class": "tools-card", "cardImage": "../assets/icon/ic_calendar.svg", "cardName": "ic_calendar", "contentCard":"Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse."}'
       >
       </include>
       <include
         src="./components/card.html"
-        locals='{"class": "tools-card", "cardImage": "../assets/icon/ic_luggage.svg", "cardName": "ic_luggage"}'
+        locals='{"class": "tools-card", "cardImage": "../assets/icon/ic_luggage.svg", "cardName": "ic_luggage", "contentCard":"Id eros pellentesque facilisi id mollis faucibus commodo enim."}'
       >
       </include>
       <include
         src="./components/card.html"
-        locals='{"class": "tools-card", "cardImage": "../assets/icon/ic_activity.svg", "cardName": "ic_activity"}'
+        locals='{"class": "tools-card", "cardImage": "../assets/icon/ic_activity.svg", "cardName": "ic_activity", "contentCard":"Nunc, pellentesque velit malesuada non massa arcu."}'
       >
       </include>
       <include
         src="./components/card.html"
-        locals='{"class": "tools-card", "cardImage": "../assets/icon/ic_car.svg", "cardName": "ic_car"}'
+        locals='{"class": "tools-card", "cardImage": "../assets/icon/ic_car.svg", "cardName": "ic_car", "contentCard":"Imperdiet purus pellentesque sit mi nibh sit integer faucibus."}'
       >
       </include>
     </div>
