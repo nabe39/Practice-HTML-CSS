@@ -3,12 +3,12 @@
   <section class="tools">
     <include
       src="./components/title.html"
-      locals='{"titlePrimary": "The tools you need", "titleSecondary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."}'
+      locals='{"titlePrimary": "The tools you need", "titleSecondary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "titleThird":""}'
     ></include>
 
     <!-- Tools Cards -->
     <div class="tools-cards cards">
-      <!-- Start tools card -->    
+      <!-- Start tools card -->
       <include
         src="./components/card.html"
         locals='{"class": "tools-card", "cardImage": "../assets/icon/ic_calendar.svg", "cardName": "ic_calendar", "contentCard":"Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse."}'
@@ -44,9 +44,9 @@
     <!-- title -->
     <include
       src="./components/title.html"
-      locals='{"titlePrimary": "You Are in GooD Company", "titleSecondary": "Bibendum amet at molestie mattis."}'
+      locals='{"titlePrimary": "You Are in GooD Company", "titleSecondary": "Bibendum amet at molestie mattis.", "titleThird": ""}'
     ></include>
-    <div class="title-third">
+    <div class="introduce-company">
       <p>
         Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit
         nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut.
@@ -89,5 +89,45 @@
       >
       </include>
     </div>
+  </section>
+
+  <!-- Caption Section -->
+  <section class="caption">
+    <!-- title -->
+    <include
+      src="./components/title.html"
+      locals='{"titlePrimary": "Caption", "titleSecondary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "titleThird": "Bibendum amet at molestie mattis."}'
+    ></include>
+
+    <!-- Caption Cards  -->
+    <div class="caption-cards cards">
+      <include
+        src="./components/card.html"
+        locals='{"class": "caption-card", "cardImage": "../assets/icon/ic_calendar.svg", "cardName": "ic_calendar", "contentCard":"Nibh nullam vitae semper pharetra sit enim id. Ut eu non massa nec. Proin eget semper orci suspendisse in ornare adipiscing phasellus mauris. Velit faucibus at habitasse tempor sit odio ac commodo dui."}'
+      >
+      </include>
+      <include
+        src="./components/card.html"
+        locals='{"class": "caption-card", "cardImage": "../assets/icon/ic_luggage.svg", "cardName": "ic_luggage", "contentCard":"Sed et pulvinar donec sed et, nisl dolor amet. Mollis aliquet volutpat ullamcorper ac sed lectus iaculis. Fringilla sed placerat commodo bibendum integer. Diam ut magna eleifend consectetur."}'
+      >
+      </include>
+      <include
+        src="./components/card.html"
+        locals='{"class": "caption-card", "cardImage": "../assets/icon/ic_activity.svg", "cardName": "ic_activity", "contentCard":"Nunc amet, tempor morbi ligula ut faucibus gravida. Accumsan, suspendisse mus quisque pellentesque id vulputate hendrerit. Donec ipsum nibh elementum platea proin egestas gravida consectetur sit."}'
+      >
+      </include>
+      <include
+        src="./components/card.html"
+        locals='{"class": "caption-card", "cardImage": "../assets/icon/ic_car.svg", "cardName": "ic_car", "contentCard":"Pellentesque auctor adipiscing lacus viverra. Neque, nulla in amet eget. Arcu, nibh purus urna amet sagittis quis tellus etiam eget. Ultrices egestas a tristique aliquet odio varius."}'
+      >
+      </include>
+    </div>
+
+    <!-- Tools button actions -->
+    <include
+      src="./components/button-primary.html"
+      locals='{"classButton": "tools-button"}'
+    >
+    </include>
   </section>
 </main>

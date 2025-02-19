@@ -6,9 +6,9 @@
   padding: 80px;
   // height: 532px;
   @include flex($direction: column);
-  .contain-button-action{
-    text-align: center;
-  }
+  // .contain-button-action{
+  //   text-align: center;
+  // }
 
   @include tablet{
     .tools-cards {
@@ -28,7 +28,6 @@
     align-items: center;
     padding: 10% 5%;
     .tools-cards{
-      width: 60%;
       margin: 10% 0;
       display: grid;
       grid-template-columns: repeat(1, 1fr);

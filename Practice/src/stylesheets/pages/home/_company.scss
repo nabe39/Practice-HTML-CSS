@@ -22,11 +22,11 @@
   @include mobile {
     padding: 10% 5%;
     .title,
-    .title-third {
+    .introduce-company {
       display: none;
     }
   }
-  .title-third {
+  .introduce-company {
     margin: 2% 0;
   }
   .company-cards {
@@ -34,7 +34,7 @@
     .company-card {
       width: 100%;
       img {
-        width: 60%;
+        width: 80%;
         height: auto;
       }
     }

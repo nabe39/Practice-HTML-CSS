@@ -21,7 +21,6 @@
   &-secondary {
     font-size: pxToRem(42);
     line-height: pxToRem(46.2);
-    text-transform: capitalize;
     font-weight: 700;
 
     @include tablet {
