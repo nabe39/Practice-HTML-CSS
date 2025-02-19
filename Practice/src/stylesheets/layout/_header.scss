@@ -1,0 +1,241 @@
+@use "../abstracts/" as *;
+
+/*************** header ***************/
+.header-main {
+  width: 100%;
+  @include flex($direction: column);
+
+  // Start Header top
+  .header-main_top {
+    width: 100%;
+    padding: 18px 80px;
+
+    @include flex($align: center, $justify: space-between, $gap: 24px);
+
+    @include tablet {
+      margin: 0 auto;
+    }
+
+    @include mobile {
+      padding: 16px;
+    }
+
+    .header-main_logo,
+    .hamburger-nav {
+      @include flex($flex-basic: 40%);
+      img {
+        width: auto;
+        height: 39px;
+        display: block;
+      }
+    }
+
+    nav {
+      @include flex($flex-basic: 30%);
+    }
+
+    .menu_list {
+      @include flex($direction: row, $justify: center, $align: center);
+      list-style: none;
+      gap: 16px;
+      li {
+        padding: 12px 8px;
+        white-space: nowrap;
+        a {
+          font-size: pxToRem(18);
+          line-height: pxToRem(16);
+          color: $text-color;
+          font-weight: 600;
+          img {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+
+    .menu_actions {
+      @include flex($gap: 16px, $flex-basic: 40%, $justify: flex-end);
+      .btn {
+        width: 103px;
+        height: 48px;
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+      .primary {
+        width: 169px;
+      }
+    }
+
+    //ViewPoint: mobile
+
+    .mobile {
+      display: none;
+    }
+
+    @include mobile {
+      .mobile {
+        display: block;
+      }
+      .desktop {
+        display: none;
+      }
+
+      //Navigation
+      .header-main_logo .mobile {
+        display: block;
+        img {
+          height: 24px;
+        }
+      }
+      .menu_list {
+        display: none;
+      }
+      .menu_actions {
+        display: none;
+      }
+      .hamburger-nav {
+        display: block;
+        a {
+          img {
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  // Start Header bottom
+  .header-main_bottom {
+    width: 100%;
+    @include flex($direction: row, $gap: 80);
+    padding: 160px 80px 80px 80px;
+    background-color: $second-color;
+
+    @include tablet {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    //title hero page on left
+    .title-hero-page {
+      display: block;
+      width: 50%;
+      .title-hero {
+        padding-right: 30%;
+        .title-hero-1 {
+          h1 {
+            font-size: pxToRem(54);
+            line-height: pxToRem(59.4);
+          }
+        }
+        .title-hero-2 {
+          margin: 48px 0;
+        }
+      }
+      .title-hero-action {
+        @include flex($direction: row, $gap: 16px);
+        padding-right: 30%;
+        button {
+          width: 230px;
+          height: 56px;
+          @include flex($align: center, $justify: center);
+        }
+      }
+    }
+
+    //hero img on right
+    .hero-img {
+      @include flex($direction: column);
+      width: 50%;
+      border: 1px solid #c1c7cd;
+      border-radius: 20px;
+      overflow: hidden;
+      .hero-img-top {
+        @include flex($justify: space-between);
+        height: 56px;
+        background-color: $background-color;
+        padding: 0 16px;
+        border-radius: 20px 20px 0 0;
+        align-items: center;
+        .ic-circle {
+          display: flex;
+          width: 20%;
+          a {
+            margin: 0 2%;
+            img {
+              width: auto;
+              height: 18px;
+            }
+          }
+        }
+        .ic-arrow {
+          width: 20%;
+          @include flex($direction: row, $justify: flex-end);
+          a {
+            margin: 0 8%;
+            img {
+              width: auto;
+              height: 18px;
+            }
+          }
+        }
+      }
+      .hero-img-bottom {
+        display: flex;
+        overflow: hidden;
+        border-radius: 0 0 20px 20px;
+        flex-grow: 1;
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 20px;
+          object-fit: fill;
+          border-radius: 0 0 20px 20px;
+        }
+      }
+    }
+
+    // ViewPoint mobile
+    @include mobile {
+      @include flex($direction: column);
+      padding: 10% 5%;
+      text-align: center;
+
+      //title hero on left
+      .title-hero-page {
+        display: block;
+        width: 100%;
+
+        .title-hero {
+          padding-right: 0;
+          .title-hero-1 {
+            h1 {
+              font-size: pxToRem(32);
+              line-height: pxToRem(35.2);
+            }
+          }
+          .title-hero-2 {
+            margin: 5% 0;
+          }
+        }
+        .title-hero-action {
+          @include flex($direction: row, $gap: 16px);
+          padding-right: 0;
+          button {
+            width: 172px;
+            height: 40px;
+            font-size: pxToRem(14);
+            font-weight: 500;
+            line-height: pxToRem(14);
+            @include flex($align: center, $justify: center);
+          }
+        }
+      }
+      //hero img on right
+      .hero-img {
+        margin-top: 8%;
+        width: 100%;
+      }
+    }
+  }
+}
