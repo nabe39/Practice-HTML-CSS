@@ -12,6 +12,8 @@
     padding: 10% 5%;
   }
   .caption-cards {
+    margin: 0;
+    padding: 5%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;

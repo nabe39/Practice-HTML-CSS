@@ -11,7 +11,7 @@
   margin: 4% 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
+  gap: 64px;
 
   @include tablet {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
