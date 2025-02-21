@@ -1,0 +1,55 @@
+@use "../../abstracts/" as *;
+
+/****** Company Page ******/
+.company {
+    padding: 80px 80px 0 80px;
+    text-align: center;
+  @include flex($direction: column);
+  background-color: $second-color;
+  @include tablet {
+    .company-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+      .company-card {
+        img {
+          width: 100%;
+          margin: 0;
+        }
+      }
+    }
+  }
+  @include mobile {
+    padding: 10% 5%;
+    .title,
+    .introduce-company {
+      display: none;
+    }
+  }
+  .introduce-company {
+    margin: 2% 0;
+  }
+  .company-cards {
+    margin: 2% 0;
+    .company-card {
+      width: 100%;
+      img {
+        width: 80%;
+        height: auto;
+      }
+    }
+  }
+  @include mobile {
+    .company-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      .company-card {
+        img {
+          width: 100%;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
