@@ -1,0 +1,21 @@
+<nav class="{{device}}">
+  <ul class="menu_list">
+    <!-- <for each="item in ['Eleven', 'Twelve', 'Thirteen']">
+      <li><a href="#" class="menu__link">{{ item }}</a></li>
+    </for> -->
+    <include src="../components/test.html" locals='{"item": "Eleven", "item": "Twelve", "item": "Thirteen"}'>
+
+    
+    <!-- <li><a href="#" class="menu__link">Eleven</a></li>
+    <li><a href="#" class="menu__link">Twelve</a></li>
+    <li><a href="#" class="menu__link">Thirteen</a></li> -->
+    <li>
+      <a href="#" class="menu__link"
+        >Sixteen
+        <figure>
+          <img src="../assets/icon/ic_arrow_down.svg" alt="ic_arrow_down" />
+        </figure>
+      </a>
+    </li>
+  </ul>
+</nav>
