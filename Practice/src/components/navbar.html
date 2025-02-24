@@ -1,12 +1,17 @@
 <nav class="{{device}}">
   <ul class="menu_list">
-    <li><a href="#" class="menu__link">Eleven</a></li>
-    <li><a href="#" class="menu__link">Twelve</a></li>
-    <li><a href="#" class="menu__link">Thirteen</a></li>
+    <include
+      src="./components/listitem.html"
+      locals='{
+        "list": "[`Eleven`, `Twelve`, `Thirteen`]"}'
+    >
+    </include>
     <li>
       <a href="#" class="menu__link"
         >Sixteen
-        <img src="../assets/icon/ic_arrow_down.svg" alt="ic_arrow_down" />
+        <figure>
+          <img src="../assets/icon/ic_arrow_down.svg" alt="ic_arrow_down" />
+        </figure>
       </a>
     </li>
   </ul>

@@ -1,8 +1,8 @@
 @use "../abstracts/" as *;
 
 .btn {
-  padding: pxToRem(16);
-  border: pxToRem(3) solid $primary-color;
+  padding: 16px;
+  border: 2px solid $primary-color;
   text-align: center;
   cursor: pointer;
   color: $text-third-color;
@@ -10,8 +10,6 @@
   font-weight: 500;
   font-size: pxToRem(20);
   line-height: pxToRem(20);
-  width: 204px;
-  height: 56px;
 }
 
 .primary{
