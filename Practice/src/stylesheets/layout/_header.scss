@@ -7,31 +7,18 @@
 
   // Start Header top
   .header-main_top {
+    @include flex($justify: space-between, $align: center);
     width: 100%;
     padding: 18px 80px;
-
-    @include flex($align: center, $justify: space-between, $gap: 24px);
-
-    @include tablet {
-      margin: 0 auto;
-    }
-
-    @include mobile {
-      padding: 16px;
-    }
+    align-self: stretch;
 
     .header-main_logo,
     .hamburger-nav {
-      @include flex($flex-basic: 40%);
       img {
         width: auto;
         height: 39px;
         display: block;
       }
-    }
-
-    nav {
-      @include flex($flex-basic: 30%);
     }
 
     .menu_list {
@@ -50,29 +37,25 @@
             margin-left: 5px;
           }
         }
+        .menu__link {
+          display: flex;
+        }
       }
     }
 
     .menu_actions {
-      @include flex($gap: 16px, $flex-basic: 40%, $justify: flex-end);
+      @include flex($gap: 16px, $justify: flex-end);
       .btn {
-        width: 103px;
-        height: 48px;
-        padding-left: 12px;
-        padding-right: 12px;
-      }
-      .primary {
-        width: 169px;
+        padding: 12px 16px;
       }
     }
-
-    //ViewPoint: mobile
-
     .mobile {
       display: none;
     }
 
+    //ViewPoint: mobile navigation
     @include mobile {
+      padding: 16px;
       .mobile {
         display: block;
       }
@@ -80,24 +63,20 @@
         display: none;
       }
 
-      //Navigation
-      .header-main_logo .mobile {
-        display: block;
-        img {
-          height: 24px;
-        }
-      }
-      .menu_list {
-        display: none;
-      }
-      .menu_actions {
-        display: none;
-      }
-      .hamburger-nav {
-        display: block;
-        a {
+      //Navigation mobile
+      .header-main_top {
+        .header-main_logo .mobile {
+          display: block;
           img {
             height: 24px;
+          }
+        }
+        .hamburger-nav {
+          display: block;
+          a {
+            img {
+              height: 24px;
+            }
           }
         }
       }
@@ -107,14 +86,9 @@
   // Start Header bottom
   .header-main_bottom {
     width: 100%;
-    @include flex($direction: row, $gap: 80);
+    @include flex($direction: row, $gap: 80px);
     padding: 160px 80px 80px 80px;
     background-color: $second-color;
-
-    @include tablet {
-      margin: 0 auto;
-      width: 100%;
-    }
 
     //title hero page on left
     .title-hero-page {
@@ -134,11 +108,10 @@
       }
       .title-hero-action {
         @include flex($direction: row, $gap: 16px);
-        padding-right: 30%;
         button {
-          width: 230px;
           height: 56px;
           @include flex($align: center, $justify: center);
+          padding: 16px;
         }
       }
     }
@@ -146,10 +119,10 @@
     //hero img on right
     .hero-img {
       width: 100%;
-      max-width: 600px;
-      figure{
+      max-width: 700px;
+      figure {
         @include flex($justify: center);
-        img{
+        img {
           width: 100%;
           height: auto;
           object-fit: cover;
@@ -157,7 +130,35 @@
       }
     }
 
-    // ViewPoint mobile
+    // ViewPoint table hero
+    @include tablet {
+      margin: 0 auto;
+      width: 100%;
+      padding: 80px;
+      //title hero page on left
+      .title-hero-page {
+        .title-hero {
+          .title-hero-1 {
+            h1 {
+              font-size: pxToRem(32);
+              line-height: pxToRem(35.2);
+            }
+          }
+        }
+        .title-hero-action {
+          button {
+            height: 40px;
+            font-size: pxToRem(14);
+            font-weight: 500;
+            line-height: pxToRem(14);
+            @include flex($align: center, $justify: center);
+            flex: 1 0 0;
+          }
+        }
+      }
+    }
+
+    // ViewPoint mobile hero
     @include mobile {
       @include flex($direction: column);
       padding: 10% 5%;
@@ -182,14 +183,13 @@
         }
         .title-hero-action {
           @include flex($direction: row, $gap: 16px);
-          padding-right: 0;
           button {
-            width: 172px;
             height: 40px;
             font-size: pxToRem(14);
             font-weight: 500;
             line-height: pxToRem(14);
             @include flex($align: center, $justify: center);
+            flex: 1 0 0;
           }
         }
       }

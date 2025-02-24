@@ -1,14 +1,11 @@
 <nav class="{{device}}">
   <ul class="menu_list">
-    <!-- <for each="item in ['Eleven', 'Twelve', 'Thirteen']">
-      <li><a href="#" class="menu__link">{{ item }}</a></li>
-    </for> -->
-    <include src="../components/test.html" locals='{"item": "Eleven", "item": "Twelve", "item": "Thirteen"}'>
-
-    
-    <!-- <li><a href="#" class="menu__link">Eleven</a></li>
-    <li><a href="#" class="menu__link">Twelve</a></li>
-    <li><a href="#" class="menu__link">Thirteen</a></li> -->
+    <include
+      src="./components/listitem.html"
+      locals='{
+        "list": "[`Eleven`, `Twelve`, `Thirteen`]"}'
+    >
+    </include>
     <li>
       <a href="#" class="menu__link"
         >Sixteen
