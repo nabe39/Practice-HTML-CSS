@@ -19,7 +19,7 @@
         <button class="btn primary">Start Free Trial</button>
       </div>
 
-      <!-- ViewPoint: Mobile -->
+      <!-- ViewPoint: Mobile Navigation -->
       <!-- logo Mobile -->
       <include
         src="./components/logo.html"
@@ -27,20 +27,12 @@
       ></include>
 
       <!-- navigation for mobile  -->
-      <include
-        src="./components/navbar.html"
-        locals='{ "device": "mobile" }'
-      ></include>
-
-      <div class="menu_actions mobile">
-        <button class="btn">Log In</button>
-        <button class="btn primary">Start Free Trial</button>
-      </div>
-
       <div class="hamburger-nav mobile">
-        <a href="#">
-          <img src="../assets/icon/ic_plus_mobile.svg" alt="hamburger-nav" />
-        </a>
+        <button>
+          <figure>
+            <img src="../assets/icon/ic_plus_mobile.svg" alt="hamburger-nav" />
+          </figure>
+        </button>
       </div>
     </div>
 
@@ -70,33 +62,13 @@
           <button class="btn-hero-action btn">Secondary Action</button>
         </div>
       </div>
+      
       <div class="hero-img">
-        <div class="hero-img-top">
-          <include
-            src="./components/icon-list.html"
-            locals='{
-            "icons": ["ic_f-circle.svg", "ic_f-circle.svg", "ic_f-circle.svg"]
-          }'
-          ></include>
-          <div class="ic-arrow">
-            <a href="">
-              <img
-                src="../assets/icon/ic_arrow_left_not_active.svg"
-                alt="ic_arrow_left_not_active"
-              />
-            </a>
-            <a href="">
-              <img
-                src="../assets/icon/ic_arrow-right.svg"
-                alt="ic_arrow-right"
-              />
-            </a>
-          </div>
-        </div>
-        <figure class="hero-img-bottom">
-          <img src="../assets/image/desktop/hero_video.png" alt="" />
+        <figure>
+          <img src="../assets/image/desktop/hero-img-right-desktop.png" alt="hero-img-right-desktop" />
         </figure>
       </div>
     </div>
   </div>
 </header>
+
