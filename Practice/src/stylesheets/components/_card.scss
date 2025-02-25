@@ -8,7 +8,7 @@
 }
 
 .cards {
-  margin: 4% 0;
+  margin: 4% 0; //4% margin top and bottom = 4% width parent
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 16px;
