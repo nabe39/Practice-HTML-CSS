@@ -199,4 +199,36 @@
       </figure>
     </div>
   </section>
+
+  <!-- Blog Section1 -->
+  <section class="blog">
+    <!-- title -->
+    <include
+      src="./components/title.html"
+      locals='{"titlePrimary": "from our blog", "titleSecondary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "titleThird": "Bibendum amet at molestie mattis."}'
+    ></include>
+
+    <!-- card-blog -->
+    <article>
+      <div class="blog-cards cards">
+        <include
+          src="./components/card-blog.html"
+          locals='{"list":[
+          {"cardImage": "../assets/image/desktop/placeholder.png", "cardName": "placeholder"},
+          {"cardImage": "../assets/image/desktop/placeholder.png", "cardName": "placeholder"},
+          {"cardImage": "../assets/image/desktop/placeholder.png", "cardName": "placeholder"},
+          {"cardImage": "../assets/image/desktop/placeholder.png", "cardName": "placeholder"}
+          ]}'
+        >
+        </include>
+      </div>
+    </article>
+
+    <!-- button primary -->
+    <include
+      src="./components/button-primary.html"
+      locals='{"classButton": "blog-button"}'
+    >
+    </include>
+  </section>
 </main>
