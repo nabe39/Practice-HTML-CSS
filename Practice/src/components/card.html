@@ -1,6 +1,8 @@
-<article>
-  <div class="{{class}} card">
-    <img src="{{cardImage}}" alt="{{cardName}}" />
-    <p>{{contentCard}}</p>
-  </div>
-</article>
+<each loop="item in {{list}}">
+  <article>
+    <div class="{{item.class}} card">
+      <img src="{{item.cardImage}}" alt="{{item.cardName}}" />
+      <p>{{item.contentCard}}</p>
+    </div>
+  </article>
+</each>
