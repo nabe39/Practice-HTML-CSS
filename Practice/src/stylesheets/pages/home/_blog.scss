@@ -1,0 +1,62 @@
+@use "../../abstracts/" as *;
+
+/***** Blog Page *****/
+.blog {
+  @include flex($direction: column);
+  padding: 80px;
+  .blog-cards {
+    .blog-card {
+      padding: 0;
+      border: 1px solid #dde1e6;
+      .img-placeholder {
+        img {
+          width: 100%;
+          max-height: 220px;
+          height: auto;
+        }
+      }
+      .container-context-blog {
+        text-align: start;
+        @include flex($direction: column, $align: flex-start, $gap: 16px);
+        padding: 24px 16px 16px 16px;
+        align-self: stretch;
+        .content-title {
+          @include flex($direction: column);
+        }
+        .information-content-author {
+          @include flex($direction: row, $gap: 16px);
+          .author-detail {
+            b {
+              line-height: pxToRem(17.6);
+            }
+            p {
+              color: #697077;
+              line-height: pxToRem(22.4);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // ViewPoint: table
+  @include tablet {
+    .blog-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
+  }
+
+  //   ViewPoint: mobile
+  @include mobile {
+    padding: 48px 16px;
+    @include flex($gap: 32px);
+    .blog-cards {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+    }
+  }
+}
+
