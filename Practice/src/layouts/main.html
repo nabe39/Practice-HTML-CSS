@@ -155,7 +155,7 @@
           <div class="author-role">Role</div>
         </div>
       </div>
-      
+
       <figure class="testimonials-next">
         <img src="../assets/icon/ic_arrow-right.svg" alt="ic_arrow-right" />
       </figure>
@@ -192,5 +192,31 @@
       locals='{"classButton": "blog-button"}'
     >
     </include>
+  </section>
+
+  <!-- The Team Section -->
+  <section class="team">
+    <!-- title -->
+    <include
+      src="./components/title.html"
+      locals='{"titlePrimary": "the team", "titleSecondary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "titleThird": "Bibendum amet at molestie mattis."}'
+    >
+    </include>
+
+    <!-- Start card team -->
+    <article>
+      <div class="team-cards cards">
+        <include
+          src="./components/card-team.html"
+          locals='{"list": [
+          {"cardImage":"../assets/image/desktop/person1.png","nameMember": "Darrell Steward","roleMember": "UI Designer & Co-founder","iconName": "ic_instagram_gray.png", "contactName":"Contact Darrell"},
+          {"cardImage":"../assets/image/desktop/person2.png","nameMember": "Savannah Nguyen","roleMember": "UI Designer & Co-founder","iconName": "ic_instagram_gray.png", "contactName":"Contact Savannah"},
+          {"cardImage":"../assets/image/desktop/person3.png","nameMember": "Dianne Russell","roleMember": "Developer", "iconName": "ic_instagram_gray.png","contactName":"Contact Dianne"},
+          {"cardImage":"../assets/image/desktop/person4.png","nameMember": "Kristin Watson","roleMember": "Sr. Product Designer", "contactName":"Contact Kristin"}
+          ]}'
+        >
+        </include>
+      </div>
+    </article>
   </section>
 </main>
