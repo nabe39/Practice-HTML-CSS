@@ -14,10 +14,14 @@
 
     .header-main_logo,
     .hamburger-nav {
-      img {
-        width: auto;
-        height: 39px;
-        display: block;
+      figure {
+        @include flex($justify: center, $align: center, );
+        max-width: 181px;
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
       }
     }
 
@@ -73,7 +77,8 @@
         }
         .hamburger-nav {
           display: block;
-          a {
+          figure {
+            @include flex($justify: center, $align: center);
             img {
               height: 24px;
             }
