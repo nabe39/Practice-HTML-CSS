@@ -1,0 +1,48 @@
+@use "../../abstracts/" as *;
+
+/****** Testimonials Page ******/
+.testimonials {
+  padding: 80px;
+  background-color: $second-color;
+  @include flex($direction: column, $gap: 16px);
+  .testimonials-slider {
+    @include flex($gap: 2%, $align: center);
+    text-align: center;
+    padding: 3%;
+    .content-testimonials {
+      @include flex(
+        $direction: column,
+        $align: center,
+        $justify: space-between
+      );
+      padding: 24px;
+      border: solid 1px #dde1e6;
+      background-color: $background-color;
+      height: 350px;
+      img {
+        margin-top: 2%;
+      }
+      .testimonials-author {
+        .author-avatar {
+          margin-bottom: 5%;
+        }
+        .author-name {
+          font-weight: 700;
+          font-size: pxToRem(24);
+          line-height: pxToRem(26.4);
+          margin-bottom: 2%;
+        }
+      }
+    }
+  }
+  @include mobile {
+    padding: 10% 5%;
+    .testimonials-slider {
+      @include flex($wrap: nowrap, $justify: center);
+      margin: 10% 0 0 0;
+    }
+    .content-testimonials:nth-child(odd) {
+      display: none;
+    }
+  }
+}
