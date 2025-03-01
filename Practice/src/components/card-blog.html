@@ -1,0 +1,25 @@
+<each loop="item in {{list}}">
+  <div class="blog-card card">
+    <figure class="img-placeholder">
+      <img src="{{item.cardImage}}" alt="{{item.cardName}}" />
+    </figure>
+    <div class="container-context-blog">
+      <div class="content-title">
+        <span>Category</span>
+        <b>Article Title</b>
+      </div>
+      <div class="content-description">
+        <p>Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
+      </div>
+      <div class="information-content-author">
+        <figure class="img-author">
+          <img src="../assets/image/desktop/user_thumb.png" alt="" />
+        </figure>
+        <div class="author-detail">
+          <b>Jane Doe</b>
+          <p>Senior Designer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</each>
