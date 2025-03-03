@@ -8,7 +8,7 @@
 
     <!-- Tools Cards -->
     <div class="tools-cards cards">
-      <!-- Start tools card -->    
+      <!-- Start tools card -->
       <include
         src="./components/card.html"
         locals='{"list": [
@@ -60,7 +60,6 @@
       </include>
     </div>
   </section>
-
 
   <!-- Caption Section -->
   <section class="caption">
@@ -196,5 +195,107 @@
     >
     </include>
   </section>
-</main>
 
+  <!-- The Team Section -->
+  <section class="team">
+    <!-- title -->
+    <include
+      src="./components/title.html"
+      locals='{"titlePrimary": "the team", "titleSecondary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "titleThird": "Bibendum amet at molestie mattis."}'
+    >
+    </include>
+
+    <!-- Start card team -->
+    <article>
+      <div class="team-cards cards">
+        <include
+          src="./components/card-team.html"
+          locals='{"list": [
+          {"cardImage":"../assets/image/desktop/person1.png","nameMember": "Darrell Steward","roleMember": "UI Designer & Co-founder","iconName": "ic_instagram_gray.png", "contactName":"Contact Darrell"},
+          {"cardImage":"../assets/image/desktop/person2.png","nameMember": "Savannah Nguyen","roleMember": "UI Designer & Co-founder","iconName": "ic_instagram_gray.png", "contactName":"Contact Savannah"},
+          {"cardImage":"../assets/image/desktop/person3.png","nameMember": "Dianne Russell","roleMember": "Developer", "iconName": "ic_instagram_gray.png","contactName":"Contact Dianne"},
+          {"cardImage":"../assets/image/desktop/person4.png","nameMember": "Kristin Watson","roleMember": "Sr. Product Designer", "contactName":"Contact Kristin"}
+          ]}'
+        >
+        </include>
+      </div>
+    </article>
+  </section>
+
+  <!-- Price Section -->
+  <section class="price">
+    <!-- title -->
+    <div class="price-title">
+      <include
+        src="./components/title.html"
+        locals='{"titlePrimary": "Pricing", "titleSecondary": "Bibendum amet at molestie mattis.", "titleThird": ""}'
+      >
+      </include>
+      <p>
+        Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit
+        nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut.
+        Non, amet, aliquet scelerisque nullam sagittis, pulvinar. Fermentum
+        scelerisque sit consectetur hac mi. Mollis leo eleifend ultricies purus
+        iaculis.
+      </p>
+    </div>
+    <!-- Sale toggle -->
+    <div class="package-time">
+      <div class="sale">20% OFF</div>
+      <div class="switch-container">
+        <span>Yearly</span>
+        <div class="switch"></div>
+        <span>Monthly</span>
+      </div>
+    </div>
+
+    <!-- Price card -->
+    <article class="container-price-cards">
+      <div class="tag-package">Most Popular</div>
+      <div class="price-cards cards">
+        <include
+          src="./components/card-price.html"
+          locals='{"list":[
+        {"packageName":"Freelancer",
+          "packageDescription":"Quisque donec nibh diam tellus integer eros.",
+          "price":"$35",
+          "priceSale":"$25",
+          "priceDescription":"$25 USD per month, paid annually", "listFt": ["Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen"]},
+
+          {"packageName":"Professional",
+          "packageDescription":"Sed eget purus vulputate suscipit erat.",
+          "price":"$65",
+          "priceSale":"$55",
+          "priceDescription":"$55 USD per month, paid annually", "listFt": ["Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen","Seventeen","Eighteen"]},
+
+          {"packageName":"Agency",
+          "packageDescription":"Odio aenean purus non cursus blandit.",
+          "price":"$125",
+          "priceSale":"$95",
+          "priceDescription":"$25 USD per month, paid annually", "listFt": ["Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen","Sixteen","Seventeen","Eighteen", "Nineteen","Twenty","Thirty","Forty"]}
+        ]}'
+        >
+        </include>
+      </div>
+    </article>
+  </section>
+
+  <!-- Q&A Section -->
+  <section class="question">
+    <!-- title -->
+    <include
+      src="./components/title.html"
+      locals='{"titlePrimary": "Frequently Asked questions", "titleSecondary": "Bibendum amet at molestie mattis.", "titleThird": ""}'
+    >
+    </include>
+
+    <!-- Q&A -->
+    <div class="container-questions">
+      <include
+        src="./components/card-question.html"
+        locals='{"list":["Who should use the app?", "What is included with my subscription?", "How do i get paid?","Is my personal information safe","How can we get in touch?"]}'
+      >
+      </include>
+    </div>
+  </section>
+</main>
