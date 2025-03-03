@@ -1,17 +1,9 @@
 @use "../abstracts/" as *;
 
-.img-main {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-}
-
 .cards {
-  margin: 4% 0; //4% margin top and bottom = 4% width parent 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 64px;
+  gap: 16px;
 
   @include tablet {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -23,25 +15,20 @@
   }
 }
 .card {
-  display: block;
+  @include flex(
+    $direction: column,
+    $justify: center,
+    $align: center,
+    $gap: 16px
+  );
   text-align: center;
-  padding: 0 5%;
-  img {
-    margin: 0 auto 5%;
-    width: 48px;
-    height: 48px;
-    position: relative;
-    cursor: pointer;
-
-    @include tablet {
-      width: 48px;
-      height: 48px;
-      margin: 0 auto 23px;
-    }
-
-    @include mobile {
-      width: 40px;
-      height: 36px;
+  figure {
+    width: 100%;
+    .img-main {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
     }
   }
 }
