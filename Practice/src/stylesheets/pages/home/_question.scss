@@ -1,0 +1,40 @@
+@use "../../abstracts/" as *;
+
+/********** Q&A **********/
+.question {
+  background-color: $second-color;
+  padding: 80px;
+  @include flex(
+    $direction: column,
+    $align: center,
+    $gap: 64px,
+    $justify: center
+  );
+  .container-questions {
+    @include flex($direction: column, $gap: 16px, $align: stretch);
+    width: 60%;
+    .question-card {
+      border: 1px solid #dde1e6;
+      background-color: $background-color;
+      padding: 16px;
+      @include flex($justify: space-between);
+      span {
+        font-size: pxToRem(20);
+        font-weight: 700;
+        line-height: pxToRem(22);
+      }
+    }
+  }
+
+  @include tablet {
+    padding: 48px 16px;
+    gap: 32px;
+  }
+  @include mobile{
+    padding: 48px 16px;
+    gap: 32px;
+    .container-questions{
+        width: 100%;
+    }
+  }
+}
