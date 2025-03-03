@@ -4,12 +4,17 @@
 
 .tools {
   padding: 80px;
-  // height: 532px;
-  @include flex($direction: column);
-  // .contain-button-action{
-  //   text-align: center;
-  // }
-  @include tablet{
+  @include flex($direction: column, $gap: 64px);
+  .tools-cards {
+    article {
+      .tools-card {
+        figure {
+          width: 48px;
+        }
+      }
+    }
+  }
+  @include tablet {
     .tools-cards {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -23,10 +28,11 @@
     }
   }
 
-  @include mobile{
+  @include mobile {
     align-items: center;
     padding: 10% 5%;
-    .tools-cards{
+    gap: 32px;
+    .tools-cards {
       margin: 10% 0;
       display: grid;
       grid-template-columns: repeat(1, 1fr);

@@ -4,10 +4,7 @@
 
 .caption {
   padding: 80px;
-  @include flex($direction: column);
-//   .contain-button-action {
-//     text-align: center;
-//   }
+  @include flex($direction: column, $gap: 64px);
   @include mobile {
     padding: 10% 5%;
   }
@@ -15,10 +12,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    .caption-card {
-      img {
-        width: 96px;
-        height: 96px;
+    gap: 64px;
+    .caption-card{
+      padding: 0 16px;
+      figure{
+        width: 98px;
       }
     }
   }
