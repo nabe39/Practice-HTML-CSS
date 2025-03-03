@@ -45,8 +45,9 @@
 
     .menu_actions {
       @include flex($gap: 16px, $justify: flex-end);
-      .btn {
+      .menu_action-btn {
         padding: 12px 16px;
+        background-color: $background-color;
       }
     }
     .mobile {

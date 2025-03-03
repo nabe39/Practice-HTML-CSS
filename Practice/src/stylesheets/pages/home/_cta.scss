@@ -1,0 +1,57 @@
+@use "../../abstracts/" as *;
+
+/*************** CTA Page ***************/
+.cta {
+  padding: 80px;
+  @include flex(
+    $direction: column,
+    $gap: 48px,
+    $align: center,
+    $justify: center
+  );
+  .cta-title {
+    text-align: center;
+    @include flex($direction: column, $gap: 48px);
+  }
+  .cta-contain-button-action {
+    @include flex($gap: 16px);
+    .cta-btn,
+    .cta-btn-primary {
+      span {
+        padding: 0 16px;
+      }
+    }
+    .cta-btn {
+      background-color: $background-color;
+    }
+  }
+
+  @include tablet {
+    padding: 48px 16px;
+    gap: 32px;
+
+    .cta-title {
+      text-align: center;
+      @include flex($direction: column, $gap: 24px);
+    }
+  }
+  @include mobile {
+    padding: 48px 16px;
+    gap: 32px;
+    .cta-title {
+      text-align: center;
+      @include flex($direction: column, $gap: 24px);
+    }
+    .cta-contain-button-action {
+      .cta-btn,
+      .cta-btn-primary {
+        padding: 8px 12px;
+        display: flex;
+        font-size: pxToRem(14);
+        line-height: pxToRem(14);
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
