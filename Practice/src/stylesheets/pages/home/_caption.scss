@@ -1,0 +1,31 @@
+@use "../../abstracts/" as *;
+
+/***** Caption Page *****/
+
+.caption {
+  padding: 80px;
+  @include flex($direction: column, $gap: 64px);
+  @include mobile {
+    padding: 10% 5%;
+  }
+  .caption-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 64px;
+    .caption-card{
+      padding: 0 16px;
+      figure{
+        width: 98px;
+      }
+    }
+  }
+
+  @include mobile {
+    .caption-cards {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+    }
+  }
+}

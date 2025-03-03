@@ -2,8 +2,8 @@
 
 /****** Company Page ******/
 .company {
-    padding: 80px 80px 0 80px;
-    text-align: center;
+  padding: 80px;
+  text-align: center;
   @include flex($direction: column);
   background-color: $second-color;
   @include tablet {
@@ -12,30 +12,25 @@
       grid-template-columns: repeat(3, 1fr);
       justify-items: center;
       .company-card {
-        img {
-          width: 100%;
-          margin: 0;
-        }
       }
     }
   }
   @include mobile {
     padding: 10% 5%;
     .title,
-    .title-third {
+    .introduce-company {
       display: none;
     }
   }
-  .title-third {
-    margin: 2% 0;
+  .introduce-company {
+    margin: 48px 0 80px 0;
   }
   .company-cards {
-    margin: 2% 0;
     .company-card {
       width: 100%;
-      img {
-        width: 60%;
-        height: auto;
+      height: 100%;
+      figure {
+        width: 80%;
       }
     }
   }
