@@ -283,4 +283,23 @@
       </div>
     </article>
   </section>
+
+  <!-- Q&A Section -->
+  <section class="question">
+    <!-- title -->
+    <include
+      src="./components/title.html"
+      locals='{"titlePrimary": "Frequently Asked questions", "titleSecondary": "Bibendum amet at molestie mattis.", "titleThird": ""}'
+    >
+    </include>
+
+    <!-- Q&A -->
+    <div class="container-questions">
+      <include
+        src="./components/card-question.html"
+        locals='{"list":["Who should use the app?", "What is included with my subscription?", "How do i get paid?","Is my personal information safe","How can we get in touch?"]}'
+      >
+      </include>
+    </div>
+  </section>
 </main>
