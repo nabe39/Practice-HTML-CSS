@@ -1,7 +1,9 @@
 <each loop="item in {{list}}">
   <article>
     <div class="{{item.class}} card">
-      <img src="{{item.cardImage}}" alt="{{item.cardName}}" />
+      <figure>
+        <img class="img-main" src="../assets/{{item.cardImage}}" alt="{{item.cardName}}" />
+      </figure>
       <p>{{item.contentCard}}</p>
     </div>
   </article>
