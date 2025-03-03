@@ -8,7 +8,8 @@
 
     <!-- Tools Cards -->
     <div class="tools-cards cards">
-      <!-- Start tools card -->    
+      <!-- Start tools card -->
+
       <include
         src="./components/card.html"
         locals='{"list": [
@@ -51,16 +52,17 @@
       <include
         src="./components/card.html"
         locals='{"list": [
-        {"class": "company-card", "cardImage": "../assets/image/desktop/logo_shells.png", "cardName": "logo_shells", "contentCard":"" },
-        {"class": "company-card", "cardImage": "../assets/image/desktop/logo_smartFinder.png", "cardName": "logo_smartFinder", "contentCard":"" },
-        {"class": "company-card", "cardImage": "../assets/image/desktop/logo_kontrastr.png", "cardName": "logo_artVenue", "contentCard":""},
-        {"class": "company-card", "cardImage": "../assets/image/desktop/logo_zoomerr.png", "cardName": "logo_zoomerr", "contentCard":"" }
+        {"class": "company-card", "cardImage": "image/desktop/logo_shells.png", "cardName": "logo_shells", "contentCard":"" },
+        {"class": "company-card", "cardImage": "image/desktop/logo_smartFinder.png", "cardName": "logo_smartFinder", "contentCard":"" },
+        {"class": "company-card", "cardImage": "image/desktop/logo_zoomerr.png", "cardName": "logo_zoomerr", "contentCard":"" },
+        {"class": "company-card", "cardImage": "image/desktop/logo_artVenue.png", "cardName": "logo_artVenue", "contentCard":"" },
+        {"class": "company-card", "cardImage": "image/desktop/logo_kontrastr.png", "cardName": "logo_artVenue", "contentCard":""},
+        {"class": "company-card", "cardImage": "image/desktop/logo_wavesmarathon.png", "cardName": "logo_wavesmarathon", "contentCard":"" }
         ]}'
       >
       </include>
     </div>
   </section>
-
 
   <!-- Caption Section -->
   <section class="caption">
@@ -84,10 +86,10 @@
       </include>
     </div>
 
-    <!-- Tools button actions -->
+    <!-- Caption button actions -->
     <include
       src="./components/button-primary.html"
-      locals='{"classButton": "tools-button"}'
+      locals='{"classButton": "caption-button"}'
     >
     </include>
   </section>
@@ -124,12 +126,14 @@
           </p>
         </div>
         <div class="testimonials-author">
-          <figure class="author-avatar">
-            <img
-              src="../assets/image/desktop/user_thumb.png"
-              alt="user_thumb"
-            />
-          </figure>
+          <div class="author-avatar">
+            <figure>
+              <img
+                src="../assets/image/desktop/user_thumb.png"
+                alt="user_thumb"
+              />
+            </figure>
+          </div>
           <div class="author-name">Author Name</div>
           <div class="author-role">Role</div>
         </div>
@@ -149,12 +153,14 @@
           </p>
         </div>
         <div class="testimonials-author">
-          <figure class="author-avatar">
-            <img
-              src="../assets/image/desktop/user_thumb.png"
-              alt="user_thumb"
-            />
-          </figure>
+          <div class="author-avatar">
+            <figure>
+              <img
+                src="../assets/image/desktop/user_thumb.png"
+                alt="user_thumb"
+              />
+            </figure>
+          </div>
           <div class="author-name">Author Name</div>
           <div class="author-role">Role</div>
         </div>
@@ -164,37 +170,4 @@
       </figure>
     </div>
   </section>
-
-  <!-- Blog Section -->
-  <section class="blog">
-    <!-- title -->
-    <include
-      src="./components/title.html"
-      locals='{"titlePrimary": "from our blog", "titleSecondary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "titleThird": "Bibendum amet at molestie mattis."}'
-    ></include>
-
-    <!-- card-blog -->
-    <article>
-      <div class="blog-cards cards">
-        <include
-          src="./components/card-blog.html"
-          locals='{"list":[
-          {"cardImage": "../assets/image/desktop/placeholder.png", "cardName": "placeholder"},
-          {"cardImage": "../assets/image/desktop/placeholder.png", "cardName": "placeholder"},
-          {"cardImage": "../assets/image/desktop/placeholder.png", "cardName": "placeholder"},
-          {"cardImage": "../assets/image/desktop/placeholder.png", "cardName": "placeholder"}
-          ]}'
-        >
-        </include>
-      </div>
-    </article>
-
-    <!-- button primary -->
-    <include
-      src="./components/button-primary.html"
-      locals='{"classButton": "blog-button"}'
-    >
-    </include>
-  </section>
 </main>
-

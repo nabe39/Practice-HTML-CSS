@@ -2,10 +2,11 @@
 
 /***** Blog Page *****/
 .blog {
-  @include flex($direction: column);
+  @include flex($direction: column, $gap: 64px);
   padding: 80px;
   .blog-cards {
     .blog-card {
+      height: 524px;
       padding: 0;
       border: 1px solid #dde1e6;
       .img-placeholder {
@@ -19,13 +20,23 @@
         text-align: start;
         @include flex($direction: column, $align: flex-start, $gap: 16px);
         padding: 24px 16px 16px 16px;
-        align-self: stretch;
         .content-title {
           @include flex($direction: column);
         }
         .information-content-author {
-          @include flex($direction: row, $gap: 16px);
+          @include flex(
+            $direction: row,
+            $gap: 16px,
+            $align: center,
+            $justify: flex-start
+          );
+          width: 100%;
+
+          figure {
+            width: 48px;
+          }
           .author-detail {
+            @include flex($direction: column);
             b {
               line-height: pxToRem(17.6);
             }
@@ -59,4 +70,3 @@
     }
   }
 }
-
