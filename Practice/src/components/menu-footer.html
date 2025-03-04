@@ -1,0 +1,9 @@
+<each loop="item in {{list}}">
+  <div class="menu-footer">
+    <if condition="item.listMn">
+      <each loop="menu in item.listMn"> 
+        <span>{{menu}}</span>
+      </each>
+    </if>
+  </div>
+</each>
