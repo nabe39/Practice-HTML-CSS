@@ -1,0 +1,118 @@
+@use "../abstracts/" as *;
+
+/*************** Footer Page ***************/
+
+footer {
+  padding: 48px 80px;
+  background-color: #697077;
+  color: $background-color;
+  @include flex(
+    $direction: column,
+    $justify: center,
+    $align: flex-start,
+    $gap: 48px
+  );
+  hr {
+    color: $background-color;
+    height: 1px;
+    width: 100%;
+  }
+  .container-top-footer {
+    @include flex($justify: space-between, $align: flex-end, $gap: 48px);
+    width: 100%;
+    .email-form {
+      @include flex($align: flex-end, $gap: 16px, $justify: flex-end);
+      width: 100%;
+      .input-container {
+        position: relative;
+        width: 50%;
+
+        @include flex($align: flex-end);
+        .search-icon {
+          position: absolute;
+          top: 50%;
+          left: 10px;
+          transform: translateY(-50%);
+        }
+        .email-input {
+          width: 100%;
+          padding: 12px 16px;
+          background-color: #f2f4f8;
+          border: 1px solid #c1c7cd;
+        }
+        .email-input::placeholder {
+          padding: 0 20px;
+        }
+      }
+      .subscribe-btn {
+        padding: 12px 16px;
+      }
+    }
+  }
+  .container-menu-footer {
+    @include flex($justify: space-between, $align: center, $gap: 48px);
+    width: 100%;
+
+    .menu-footer {
+      @include flex(
+        $direction: column,
+        $justify: space-between,
+        $align: stretch,
+        $gap: 16px
+      );
+
+      span:first-child {
+        padding: 12px 0;
+        font-size: pxToRem(20);
+        font-weight: 700;
+        line-height: pxToRem(22);
+      }
+    }
+    .menu-contact-footer {
+      @include flex($direction: column, $gap: 24px);
+      .menu-contact-footer-top {
+        @include flex($gap: 16px, $direction: column);
+        .contain-logo-contact-app {
+          @include flex($gap: 8px, $align: flex-start);
+        }
+      }
+      span {
+        padding: 12px 0;
+        font-size: pxToRem(20);
+        font-weight: 700;
+        line-height: pxToRem(22);
+      }
+      .menu-contact-footer-bottom {
+        @include flex($direction: column, $gap: 8px);
+        .logo-menu-contact-social {
+          @include flex(
+            $direction: row,
+            $gap: 16px,
+            $align: center,
+            $justify: flex-start
+          );
+        }
+      }
+    }
+  }
+  .container-bottom-footer {
+    width: 100%;
+    @include flex($align: center, $justify: space-between);
+    .bottom-footer-menu {
+      @include flex($align: center, $gap: 16px);
+    }
+  }
+  @include mobile {
+    padding: 48px 16px;
+    $gap: 32px;
+    .container-top-footer {
+      @include flex($direction: column, $align: flex-start);
+      .email-form {
+        justify-content: flex-start;
+      }
+    }
+    .container-menu-footer {
+      @include flex($direction: column, $align: flex-start);
+    }
+  }
+}
