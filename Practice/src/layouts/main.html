@@ -90,11 +90,145 @@
 
     <include
       src="./components/button-primary.html"
+      locals='{"classButton": "tools-button"}'
+    >
+    </include>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <!-- title -->
+    <include
+      src="./components/title.html"
+      locals='{"titlePrimary": "Testimonials", "titleSecondary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "titleThird": "Bibendum amet at molestie mattis."}'
+    ></include>
+
+    <!-- Start slider -->
+    <div class="testimonials-slider">
+      <figure class="testimonials-prev">
+        <img
+          src="../assets/icon/ic_arrow_left_not_active.svg"
+          alt="ic_arrow_left_not_active"
+        />
+      </figure>
+
+      <div class="content-testimonials">
+        <figure>
+          <img
+            class="testimonials-logo"
+            src="../assets/image/desktop/logo_zoomerr.png"
+          />
+        </figure>
+        <div class="testimonials-context">
+          <p>
+            Malesuada facilisi libero, nam eu. Quis pellentesque tortor a
+            elementum ut blandit sed pellentesque arcu. Malesuada in faucibus
+            risus velit diam. Non, massa ut a arcu, fermentum, vel interdum.
+          </p>
+        </div>
+        <div class="testimonials-author">
+          <figure class="author-avatar">
+            <img
+              src="../assets/image/desktop/user_thumb.png"
+              alt="user_thumb"
+            />
+          </figure>
+          <div class="author-name">Author Name</div>
+          <div class="author-role">Role</div>
+        </div>
+      </div>
+
+      <div class="content-testimonials">
+        <figure>
+          <img
+            class="testimonials-logo"
+            src="../assets/image/desktop/logo_zoomerr.png"
+          />
+        </figure>
+        <div class="testimonials-context">
+          <p>
+            Malesuada facilisi libero, nam eu. Quis pellentesque tortor a
+            elementum ut blandit sed pellentesque arcu. Malesuada in faucibus
+            risus velit diam. Non, massa ut a arcu, fermentum, vel interdum.
+          </p>
+        </div>
+        <div class="testimonials-author">
+          <figure class="author-avatar">
+            <img
+              src="../assets/image/desktop/user_thumb.png"
+              alt="user_thumb"
+            />
+          </figure>
+          <div class="author-name">Author Name</div>
+          <div class="author-role">Role</div>
+        </div>
+      </div>
+
+      <figure class="testimonials-next">
+        <img src="../assets/icon/ic_arrow-right.svg" alt="ic_arrow-right" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="blog">
+    <!-- title -->
+    <include
+      src="./components/title.html"
+      locals='{"titlePrimary": "from our blog", "titleSecondary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "titleThird": "Bibendum amet at molestie mattis."}'
+    ></include>
+
+    <!-- card-blog -->
+    <article>
+      <div class="blog-cards cards">
+        <include
+          src="./components/card-blog.html"
+          locals='{"list":[
+          {"cardImage": "../assets/image/desktop/placeholder.png", "cardName": "placeholder"},
+          {"cardImage": "../assets/image/desktop/placeholder.png", "cardName": "placeholder"},
+          {"cardImage": "../assets/image/desktop/placeholder.png", "cardName": "placeholder"},
+          {"cardImage": "../assets/image/desktop/placeholder.png", "cardName": "placeholder"}
+          ]}'
+        >
+        </include>
+      </div>
+    </article>
+
+    <!-- button primary -->
+    <include
+      src="./components/button-primary.html"
+      locals='{"classButton": "blog-button"}'
       locals='{"classButton": "caption-button"}'
     >
     </include>
   </section>
 
+
+  <!-- The Team Section -->
+  <section class="team">
+    <!-- title -->
+    <include
+      src="./components/title.html"
+      locals='{"titlePrimary": "the team", "titleSecondary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "titleThird": "Bibendum amet at molestie mattis."}'
+    >
+    </include>
+
+    <!-- Start card team -->
+    <article>
+      <div class="team-cards cards">
+        <include
+          src="./components/card-team.html"
+          locals='{"list": [
+          {"cardImage":"../assets/image/desktop/person1.png","nameMember": "Darrell Steward","roleMember": "UI Designer & Co-founder","iconName": "ic_instagram_gray.png", "contactName":"Contact Darrell"},
+          {"cardImage":"../assets/image/desktop/person2.png","nameMember": "Savannah Nguyen","roleMember": "UI Designer & Co-founder","iconName": "ic_instagram_gray.png", "contactName":"Contact Savannah"},
+          {"cardImage":"../assets/image/desktop/person3.png","nameMember": "Dianne Russell","roleMember": "Developer", "iconName": "ic_instagram_gray.png","contactName":"Contact Dianne"},
+          {"cardImage":"../assets/image/desktop/person4.png","nameMember": "Kristin Watson","roleMember": "Sr. Product Designer", "contactName":"Contact Kristin"}
+          ]}'
+        >
+        </include>
+      </div>
+    </article>
+    
   <!-- Testimonials Section -->
   <section class="testimonials">
     <!-- title -->
