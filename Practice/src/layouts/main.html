@@ -9,7 +9,6 @@
     <!-- Tools Cards -->
     <div class="tools-cards cards">
       <!-- Start tools card -->
-
       <include
         src="./components/card.html"
         locals='{"list": [
@@ -86,16 +85,15 @@
       </include>
     </div>
 
-    <!-- Caption button actions -->
-
+    <!-- Tools button actions -->
     <include
       src="./components/button-primary.html"
-      locals='{"classButton": "caption-button"}'
+      locals='{"classButton": "tools-button"}'
     >
     </include>
   </section>
-  
-   <!-- Testimonials Section -->
+
+  <!-- Testimonials Section -->
   <section class="testimonials">
     <!-- title -->
     <include
@@ -127,18 +125,17 @@
           </p>
         </div>
         <div class="testimonials-author">
-          <div class="author-avatar">
-            <figure>
-              <img
-                src="../assets/image/desktop/user_thumb.png"
-                alt="user_thumb"
-              />
-            </figure>
-          </div>
+          <figure class="author-avatar">
+            <img
+              src="../assets/image/desktop/user_thumb.png"
+              alt="user_thumb"
+            />
+          </figure>
           <div class="author-name">Author Name</div>
           <div class="author-role">Role</div>
         </div>
       </div>
+
       <div class="content-testimonials">
         <figure>
           <img
@@ -154,25 +151,54 @@
           </p>
         </div>
         <div class="testimonials-author">
-          <div class="author-avatar">
-            <figure>
-              <img
-                src="../assets/image/desktop/user_thumb.png"
-                alt="user_thumb"
-              />
-            </figure>
-          </div>
+          <figure class="author-avatar">
+            <img
+              src="../assets/image/desktop/user_thumb.png"
+              alt="user_thumb"
+            />
+          </figure>
           <div class="author-name">Author Name</div>
           <div class="author-role">Role</div>
         </div>
       </div>
+
       <figure class="testimonials-next">
         <img src="../assets/icon/ic_arrow-right.svg" alt="ic_arrow-right" />
       </figure>
-
     </div>
   </section>
 
+  <!-- Blog Section -->
+  <section class="blog">
+    <!-- title -->
+    <include
+      src="./components/title.html"
+      locals='{"titlePrimary": "from our blog", "titleSecondary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "titleThird": "Bibendum amet at molestie mattis."}'
+    ></include>
+
+    <!-- card-blog -->
+    <article>
+      <div class="blog-cards cards">
+        <include
+          src="./components/card-blog.html"
+          locals='{"list":[
+          {"cardImage": "../assets/image/desktop/placeholder.png", "cardName": "placeholder"},
+          {"cardImage": "../assets/image/desktop/placeholder.png", "cardName": "placeholder"},
+          {"cardImage": "../assets/image/desktop/placeholder.png", "cardName": "placeholder"},
+          {"cardImage": "../assets/image/desktop/placeholder.png", "cardName": "placeholder"}
+          ]}'
+        >
+        </include>
+      </div>
+    </article>
+
+    <!-- button primary -->
+    <include
+      src="./components/button-primary.html"
+      locals='{"classButton": "blog-button"}'
+    >
+    </include>
+  </section>
 
   <!-- The Team Section -->
   <section class="team">
@@ -303,8 +329,6 @@
       <button class="cta-btn btn">
         <span>Secondary Action</span>
       </button>
-
- 
+    </div>
+  </section>
 </main>
-
-
