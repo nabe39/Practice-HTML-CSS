@@ -8,3 +8,4 @@
 
 # Cố định file thành CRLF (nếu cần)
 *.bat eol=crlf
+
