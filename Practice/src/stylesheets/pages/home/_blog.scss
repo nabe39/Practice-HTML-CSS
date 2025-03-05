@@ -6,6 +6,7 @@
   padding: 80px;
   .blog-cards {
     .blog-card {
+      @include flex($justify: flex-start);
       height: 524px;
       padding: 0;
       border: 1px solid #dde1e6;
