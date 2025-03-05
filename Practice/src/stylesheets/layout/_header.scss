@@ -14,10 +14,14 @@
 
     .header-main_logo,
     .hamburger-nav {
-      img {
-        width: auto;
-        height: 39px;
-        display: block;
+      figure {
+        @include flex($justify: center, $align: center);
+        max-width: 181px;
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
       }
     }
 
@@ -62,24 +66,6 @@
       }
       .desktop {
         display: none;
-      }
-
-      //Navigation mobile
-      .header-main_top {
-        .header-main_logo .mobile {
-          display: block;
-          img {
-            height: 24px;
-          }
-        }
-        .hamburger-nav {
-          display: block;
-          a {
-            img {
-              height: 24px;
-            }
-          }
-        }
       }
     }
   }
