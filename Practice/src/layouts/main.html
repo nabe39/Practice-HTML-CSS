@@ -138,6 +138,7 @@
         </div>
       </div>
 
+
       <div class="content-testimonials">
         <figure>
           <img
@@ -163,6 +164,7 @@
           <div class="author-role">Role</div>
         </div>
       </div>
+
 
       <figure class="testimonials-next">
         <img src="../assets/icon/ic_arrow-right.svg" alt="ic_arrow-right" />
@@ -228,83 +230,66 @@
         </include>
       </div>
     </article>
-    
-  <!-- Testimonials Section -->
-  <section class="testimonials">
-    <!-- title -->
-    <include
-      src="./components/title.html"
-      locals='{"titlePrimary": "Testimonials", "titleSecondary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "titleThird": "Bibendum amet at molestie mattis."}'
-    ></include>
-
-    <!-- Start slider -->
-    <div class="testimonials-slider">
-      <figure class="testimonials-prev">
-        <img
-          src="../assets/icon/ic_arrow_left_not_active.svg"
-          alt="ic_arrow_left_not_active"
-        />
-      </figure>
-
-      <div class="content-testimonials">
-        <figure>
-          <img
-            class="testimonials-logo"
-            src="../assets/image/desktop/logo_zoomerr.png"
-          />
-        </figure>
-        <div class="testimonials-context">
-          <p>
-            Malesuada facilisi libero, nam eu. Quis pellentesque tortor a
-            elementum ut blandit sed pellentesque arcu. Malesuada in faucibus
-            risus velit diam. Non, massa ut a arcu, fermentum, vel interdum.
-          </p>
-        </div>
-        <div class="testimonials-author">
-          <div class="author-avatar">
-            <figure>
-              <img
-                src="../assets/image/desktop/user_thumb.png"
-                alt="user_thumb"
-              />
-            </figure>
-          </div>
-          <div class="author-name">Author Name</div>
-          <div class="author-role">Role</div>
-        </div>
-      </div>
-      <div class="content-testimonials">
-        <figure>
-          <img
-            class="testimonials-logo"
-            src="../assets/image/desktop/logo_zoomerr.png"
-          />
-        </figure>
-        <div class="testimonials-context">
-          <p>
-            Malesuada facilisi libero, nam eu. Quis pellentesque tortor a
-            elementum ut blandit sed pellentesque arcu. Malesuada in faucibus
-            risus velit diam. Non, massa ut a arcu, fermentum, vel interdum.
-          </p>
-        </div>
-        <div class="testimonials-author">
-          <div class="author-avatar">
-            <figure>
-              <img
-                src="../assets/image/desktop/user_thumb.png"
-                alt="user_thumb"
-              />
-            </figure>
-          </div>
-          <div class="author-name">Author Name</div>
-          <div class="author-role">Role</div>
-        </div>
-      </div>
-      <figure class="testimonials-next">
-        <img src="../assets/icon/ic_arrow-right.svg" alt="ic_arrow-right" />
-      </figure>
-    </div>
   </section>
+
+  <!-- Price Section -->
+  <section class="price">
+    <!-- title -->
+    <div class="price-title">
+      <include
+        src="./components/title.html"
+        locals='{"titlePrimary": "Pricing", "titleSecondary": "Bibendum amet at molestie mattis.", "titleThird": ""}'
+      >
+      </include>
+      <p>
+        Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit
+        nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut.
+        Non, amet, aliquet scelerisque nullam sagittis, pulvinar. Fermentum
+        scelerisque sit consectetur hac mi. Mollis leo eleifend ultricies purus
+        iaculis.
+      </p>
+    </div>
+    <!-- Sale toggle -->
+    <div class="package-time">
+      <div class="sale">20% OFF</div>
+      <div class="switch-container">
+        <span>Yearly</span>
+        <div class="switch"></div>
+        <span>Monthly</span>
+      </div>
+    </div>
+
+    <!-- Price card -->
+    <article class="container-price-cards">
+      <div class="tag-package">Most Popular</div>
+      <div class="price-cards cards">
+        <include
+          src="./components/card-price.html"
+          locals='{"list":[
+        {"packageName":"Freelancer",
+          "packageDescription":"Quisque donec nibh diam tellus integer eros.",
+          "price":"$35",
+          "priceSale":"$25",
+          "priceDescription":"$25 USD per month, paid annually", "listFt": ["Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen"]},
+
+          {"packageName":"Professional",
+          "packageDescription":"Sed eget purus vulputate suscipit erat.",
+          "price":"$65",
+          "priceSale":"$55",
+          "priceDescription":"$55 USD per month, paid annually", "listFt": ["Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen","Seventeen","Eighteen"]},
+
+          {"packageName":"Agency",
+          "packageDescription":"Odio aenean purus non cursus blandit.",
+          "price":"$125",
+          "priceSale":"$95",
+          "priceDescription":"$25 USD per month, paid annually", "listFt": ["Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen","Sixteen","Seventeen","Eighteen", "Nineteen","Twenty","Thirty","Forty"]}
+        ]}'
+        >
+        </include>
+      </div>
+    </article>
+    </section>
+ 
 </main>
 
 

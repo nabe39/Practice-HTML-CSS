@@ -1,0 +1,28 @@
+<each loop="item in {{list}}">
+  <div class="price-card card">
+    <div class="package-name">
+      <h3>{{item.packageName}}</h3>
+      <span>{{item.packageDescription}}</span>
+    </div>
+    <div class="package-price">
+      <span>{{item.price}}</span>
+      <span>{{item.priceSale}}</span>
+      <span>{{item.priceDescription}}</span>
+    </div>
+    <div class="package-btn-action">
+      <button class="package-btn btn primary">Get Started</button>
+    </div>
+    <div class="container-package-feature">
+      <if condition="item.listFt">
+        <each loop="Ft in item.listFt">
+          <div class="package-feature">
+            <figure>
+              <img src="../assets/icon/ic_check.svg" alt="ic_check" />
+            </figure>
+            <span>Feature {{Ft}}</span>
+          </div>
+        </each>
+      </if>
+    </div>
+  </div>
+</each>
