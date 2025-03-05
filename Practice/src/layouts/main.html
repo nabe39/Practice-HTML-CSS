@@ -12,10 +12,10 @@
       <include
         src="./components/card.html"
         locals='{"list": [
-        {"class": "tools-card", "cardImage": "../assets/icon/ic_calendar.svg", "cardName": "ic_calendar", "contentCard":"Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse." },
-        {"class": "tools-card", "cardImage": "../assets/icon/ic_luggage.svg", "cardName": "ic_luggage", "contentCard":"Id eros pellentesque facilisi id mollis faucibus commodo enim." },
-        {"class": "tools-card", "cardImage": "../assets/icon/ic_activity.svg", "cardName": "ic_activity", "contentCard":"Nunc, pellentesque velit malesuada non massa arcu."},
-        {"class": "tools-card", "cardImage": "../assets/icon/ic_car.svg", "cardName": "ic_car", "contentCard":"Imperdiet purus pellentesque sit mi nibh sit integer faucibus." }
+        {"class": "tools-card", "cardImage": "icon/ic_calendar.svg", "cardName": "ic_calendar", "contentCard":"Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse." },
+        {"class": "tools-card", "cardImage": "icon/ic_luggage.svg", "cardName": "ic_luggage", "contentCard":"Id eros pellentesque facilisi id mollis faucibus commodo enim." },
+        {"class": "tools-card", "cardImage": "icon/ic_activity.svg", "cardName": "ic_activity", "contentCard":"Nunc, pellentesque velit malesuada non massa arcu."},
+        {"class": "tools-card", "cardImage": "icon/ic_car.svg", "cardName": "ic_car", "contentCard":"Imperdiet purus pellentesque sit mi nibh sit integer faucibus." }
         ]}'
       >
       </include>
@@ -51,10 +51,12 @@
       <include
         src="./components/card.html"
         locals='{"list": [
-        {"class": "company-card", "cardImage": "../assets/image/desktop/logo_shells.png", "cardName": "logo_shells", "contentCard":"" },
-        {"class": "company-card", "cardImage": "../assets/image/desktop/logo_smartFinder.png", "cardName": "logo_smartFinder", "contentCard":"" },
-        {"class": "company-card", "cardImage": "../assets/image/desktop/logo_kontrastr.png", "cardName": "logo_artVenue", "contentCard":""},
-        {"class": "company-card", "cardImage": "../assets/image/desktop/logo_zoomerr.png", "cardName": "logo_zoomerr", "contentCard":"" }
+        {"class": "company-card", "cardImage": "image/desktop/logo_shells.png", "cardName": "logo_shells", "contentCard":"" },
+        {"class": "company-card", "cardImage": "image/desktop/logo_smartFinder.png", "cardName": "logo_smartFinder", "contentCard":"" },
+        {"class": "company-card", "cardImage": "image/desktop/logo_zoomerr.png", "cardName": "logo_zoomerr", "contentCard":"" },
+        {"class": "company-card", "cardImage": "image/desktop/logo_artVenue.png", "cardName": "logo_artVenue", "contentCard":"" },
+        {"class": "company-card", "cardImage": "image/desktop/logo_kontrastr.png", "cardName": "logo_artVenue", "contentCard":""},
+        {"class": "company-card", "cardImage": "image/desktop/logo_wavesmarathon.png", "cardName": "logo_wavesmarathon", "contentCard":"" }
         ]}'
       >
       </include>
@@ -74,128 +76,22 @@
       <include
         src="./components/card.html"
         locals='{"list": [
-        {"class": "caption-card", "cardImage": "../assets/icon/ic_calendar.svg", "cardName": "ic_calendar", "contentCard":"Nibh nullam vitae semper pharetra sit enim id. Ut eu non massa nec. Proin eget semper orci suspendisse in ornare adipiscing phasellus mauris. Velit faucibus at habitasse tempor sit odio ac commodo dui." },
-        {"class": "caption-card", "cardImage": "../assets/icon/ic_luggage.svg", "cardName": "ic_luggage", "contentCard":"Sed et pulvinar donec sed et, nisl dolor amet. Mollis aliquet volutpat ullamcorper ac sed lectus iaculis. Fringilla sed placerat commodo bibendum integer. Diam ut magna eleifend consectetur." },
-        {"class": "caption-card", "cardImage": "../assets/icon/ic_activity.svg", "cardName": "ic_activity", "contentCard":"Nunc amet, tempor morbi ligula ut faucibus gravida. Accumsan, suspendisse mus quisque pellentesque id vulputate hendrerit. Donec ipsum nibh elementum platea proin egestas gravida consectetur sit."},
-        {"class": "caption-card", "cardImage": "../assets/icon/ic_car.svg", "cardName": "ic_car", "contentCard":"Pellentesque auctor adipiscing lacus viverra. Neque, nulla in amet eget. Arcu, nibh purus urna amet sagittis quis tellus etiam eget. Ultrices egestas a tristique aliquet odio varius." }
+        {"class": "caption-card", "cardImage": "icon/ic_calendar.svg", "cardName": "ic_calendar", "contentCard":"Nibh nullam vitae semper pharetra sit enim id. Ut eu non massa nec. Proin eget semper orci suspendisse in ornare adipiscing phasellus mauris. Velit faucibus at habitasse tempor sit odio ac commodo dui." },
+        {"class": "caption-card", "cardImage": "icon/ic_luggage.svg", "cardName": "ic_luggage", "contentCard":"Sed et pulvinar donec sed et, nisl dolor amet. Mollis aliquet volutpat ullamcorper ac sed lectus iaculis. Fringilla sed placerat commodo bibendum integer. Diam ut magna eleifend consectetur." },
+        {"class": "caption-card", "cardImage": "icon/ic_activity.svg", "cardName": "ic_activity", "contentCard":"Nunc amet, tempor morbi ligula ut faucibus gravida. Accumsan, suspendisse mus quisque pellentesque id vulputate hendrerit. Donec ipsum nibh elementum platea proin egestas gravida consectetur sit."},
+        {"class": "caption-card", "cardImage": "icon/ic_car.svg", "cardName": "ic_car", "contentCard":"Pellentesque auctor adipiscing lacus viverra. Neque, nulla in amet eget. Arcu, nibh purus urna amet sagittis quis tellus etiam eget. Ultrices egestas a tristique aliquet odio varius." }
         ]}'
       >
       </include>
     </div>
 
-    <!-- Tools button actions -->
     <include
       src="./components/button-primary.html"
-      locals='{"classButton": "tools-button"}'
+      locals='{"classButton": "caption-button"}'
     >
     </include>
   </section>
-
-  <!-- Testimonials Section -->
-  <section class="testimonials">
-    <!-- title -->
-    <include
-      src="./components/title.html"
-      locals='{"titlePrimary": "Testimonials", "titleSecondary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "titleThird": "Bibendum amet at molestie mattis."}'
-    ></include>
-
-    <!-- Start slider -->
-    <div class="testimonials-slider">
-      <figure class="testimonials-prev">
-        <img
-          src="../assets/icon/ic_arrow_left_not_active.svg"
-          alt="ic_arrow_left_not_active"
-        />
-      </figure>
-
-      <div class="content-testimonials">
-        <figure>
-          <img
-            class="testimonials-logo"
-            src="../assets/image/desktop/logo_zoomerr.png"
-          />
-        </figure>
-        <div class="testimonials-context">
-          <p>
-            Malesuada facilisi libero, nam eu. Quis pellentesque tortor a
-            elementum ut blandit sed pellentesque arcu. Malesuada in faucibus
-            risus velit diam. Non, massa ut a arcu, fermentum, vel interdum.
-          </p>
-        </div>
-        <div class="testimonials-author">
-          <figure class="author-avatar">
-            <img
-              src="../assets/image/desktop/user_thumb.png"
-              alt="user_thumb"
-            />
-          </figure>
-          <div class="author-name">Author Name</div>
-          <div class="author-role">Role</div>
-        </div>
-      </div>
-      <div class="content-testimonials">
-        <figure>
-          <img
-            class="testimonials-logo"
-            src="../assets/image/desktop/logo_zoomerr.png"
-          />
-        </figure>
-        <div class="testimonials-context">
-          <p>
-            Malesuada facilisi libero, nam eu. Quis pellentesque tortor a
-            elementum ut blandit sed pellentesque arcu. Malesuada in faucibus
-            risus velit diam. Non, massa ut a arcu, fermentum, vel interdum.
-          </p>
-        </div>
-        <div class="testimonials-author">
-          <figure class="author-avatar">
-            <img
-              src="../assets/image/desktop/user_thumb.png"
-              alt="user_thumb"
-            />
-          </figure>
-          <div class="author-name">Author Name</div>
-          <div class="author-role">Role</div>
-        </div>
-      </div>
-      <figure class="testimonials-next">
-        <img src="../assets/icon/ic_arrow-right.svg" alt="ic_arrow-right" />
-      </figure>
-    </div>
-  </section>
-
-  <!-- Blog Section -->
-  <section class="blog">
-    <!-- title -->
-    <include
-      src="./components/title.html"
-      locals='{"titlePrimary": "from our blog", "titleSecondary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "titleThird": "Bibendum amet at molestie mattis."}'
-    ></include>
-
-    <!-- card-blog -->
-    <article>
-      <div class="blog-cards cards">
-        <include
-          src="./components/card-blog.html"
-          locals='{"list":[
-          {"cardImage": "../assets/image/desktop/placeholder.png", "cardName": "placeholder"},
-          {"cardImage": "../assets/image/desktop/placeholder.png", "cardName": "placeholder"},
-          {"cardImage": "../assets/image/desktop/placeholder.png", "cardName": "placeholder"},
-          {"cardImage": "../assets/image/desktop/placeholder.png", "cardName": "placeholder"}
-          ]}'
-        >
-        </include>
-      </div>
-    </article>
-
-    <!-- button primary -->
-    <include
-      src="./components/button-primary.html"
-      locals='{"classButton": "blog-button"}'
-    >
-    </include>
-  </section>
-
+  
   <!-- The Team Section -->
   <section class="team">
     <!-- title -->
@@ -299,3 +195,4 @@
     </div>
   </section>
 </main>
+
