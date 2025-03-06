@@ -9,7 +9,6 @@
     gap: 16px;
     .team-card {
       @include flex($direction: column, $align: center);
-      flex: 1 0 0;
       padding: 0;
       .avatar-member {
         img {
@@ -68,7 +67,10 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       justify-items: center;
-      gap: 48px;
+      gap: 16px;
+      .team-card{
+        // height: 48px;
+      }
     }
   }
 }

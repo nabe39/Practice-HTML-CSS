@@ -4,14 +4,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 16px;
-
-  @include tablet {
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  }
-
-  @include mobile {
-    grid-template-columns: 1fr;
-  }
+  align-items: center;
 }
 .card {
   @include flex(
@@ -26,7 +19,7 @@
     .img-main {
       width: 100%;
       height: auto;
-      object-fit: cover;
+      object-fit: fill;
       display: block;
     }
   }
