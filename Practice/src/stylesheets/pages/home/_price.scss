@@ -101,9 +101,6 @@
             line-height: pxToRem(19.6);
           }
         }
-        .package-btn{
-          padding: 20px 30px;
-        }
         .container-package-feature {
           @include flex($direction: column, $gap: 8px, $align: flex-start);
           .package-feature {
