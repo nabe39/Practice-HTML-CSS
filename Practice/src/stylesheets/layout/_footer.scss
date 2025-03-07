@@ -26,8 +26,11 @@ footer {
       .input-container {
         position: relative;
         width: 50%;
-
+        height: 48px;
         @include flex($align: flex-end);
+        input {
+          height: 100%;
+        }
         .search-icon {
           position: absolute;
           top: 50%;
@@ -63,9 +66,9 @@ footer {
 
       span:first-child {
         padding: 12px 0;
-        font-size: pxToRem(20);
+        font-size: 20px;
         font-weight: 700;
-        line-height: pxToRem(22);
+        line-height: 22px;
       }
     }
     .menu-contact-footer {
@@ -78,9 +81,9 @@ footer {
       }
       span {
         padding: 12px 0;
-        font-size: pxToRem(20);
+        font-size: 20px;
         font-weight: 700;
-        line-height: pxToRem(22);
+        line-height: 22px;
       }
       .menu-contact-footer-bottom {
         @include flex($direction: column, $gap: 8px);

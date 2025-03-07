@@ -26,8 +26,8 @@
       display: block;
       background-color: #f2f4f8;
       border-radius: 10px;
-      font-size: pxToRem(14);
-      line-height: pxToRem(16.8);
+      font-size: 14px;
+      line-height: 16.8px;
     }
     .switch-container {
       padding: 0 10px;
@@ -81,14 +81,14 @@
         .package-name {
           @include flex($direction: column, $align: center, $gap: 8px);
           h3 {
-            font-size: pxToRem(32);
-            line-height: pxToRem(35.2);
+            font-size: 32px;
+            line-height: 35.2px;
             font-weight: 700;
           }
         }
         .package-price {
-          font-size: pxToRem(54);
-          line-height: pxToRem(59.4);
+          font-size: 54px;
+          line-height: 59.4px;
           font-weight: 700;
           @include flex($direction: column, $align: center, $gap: 8px);
           span:nth-of-type(1) {
@@ -96,9 +96,9 @@
             text-decoration-line: line-through;
           }
           span:nth-of-type(3) {
-            font-size: pxToRem(14);
+            font-size: 14px;
             font-weight: 400;
-            line-height: pxToRem(19.6);
+            line-height: 19.6px;
           }
         }
         .container-package-feature {
