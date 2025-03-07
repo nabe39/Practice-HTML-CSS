@@ -4,7 +4,6 @@
   padding: 16px;
   border: 2px solid $primary-color;
   text-align: center;
-  width: auto;
   cursor: pointer;
   color: $text-third-color;
   background-color: $second-color;
@@ -13,7 +12,7 @@
   line-height: pxToRem(20);
 }
 
-.primary {
+.primary{
   color: $text-second-color;
   background-color: $primary-color;
 }
