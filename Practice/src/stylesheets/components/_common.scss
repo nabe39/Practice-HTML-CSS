@@ -10,13 +10,13 @@
 
   @include tablet {
     width: 100%;
-   
+    padding: 48px 16px;
     margin: 0 auto;
   }
 
   @include mobile {
-    padding: 0;
     width: 100%;
+    padding: 48px 16px;
     margin: 0 auto;
   }
 }

@@ -4,7 +4,7 @@ $primary-font: Roboto;
 // Breakpoints
 
 $medium: 480px;
-$extra-lager: 1200px;
+$extra-lager: 1024px;
 
 $mobile: calc($medium - 1px);
 $tablet: calc($extra-lager - 1px);
@@ -20,4 +20,4 @@ $text-third-color: #0F62FE;
 $text-logo-color: #697077;
 
 $title-section-color: #001D6C;
-$main-spacing: pxToRem(-0.58);
+
