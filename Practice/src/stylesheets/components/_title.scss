@@ -2,36 +2,36 @@
 .title {
   text-align: center;
   &-primary {
-    line-height: pxToRem(20);
-    font-size: pxToRem(20);
+    line-height: 20px;
+    font-size: 20px;
     color: $title-section-color;
     text-transform: uppercase;
     margin-bottom: 1%;
 
     @include tablet {
-      line-height: pxToRem(20);
-      font-size: pxToRem(20);
+      line-height: 20px;
+      font-size: 20px;
     }
 
     @include mobile {
-      font-size: pxToRem(20);
-      line-height: pxToRem(20);
+      font-size: 20px;
+      line-height: 20px;
     }
   }
   &-secondary {
-    font-size: pxToRem(42);
-    line-height: pxToRem(46.2);
+    font-size: 42px;
+    line-height: 46.2px;
     font-weight: 700;
 
     @include tablet {
-      font-size: pxToRem(32);
-      line-height: pxToRem(40);
+      font-size: 32px;
+      line-height: 40px;
       padding-bottom: 10px;
     }
 
     @include mobile {
-      font-size: pxToRem(24);
-      line-height: pxToRem(26.4);
+      font-size: 24px;
+      line-height: 26.4px;
       padding-bottom: 7px;
     }
   }

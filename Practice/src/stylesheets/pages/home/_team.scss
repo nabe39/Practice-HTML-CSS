@@ -4,7 +4,6 @@
 .team {
   @include flex($direction: column, $gap: 64px);
   background-color: $second-color;
-  padding: 80px;
   .team-cards {
     gap: 16px;
     .team-card {
@@ -14,11 +13,17 @@
       .avatar-member {
         img {
           width: 100%;
-          height: auto;
+          height: 100%;
+          object-fit: cover;
         }
       }
       .container-context-team {
-        @include flex($direction: column, $gap: 16px, $justify: content, $align: center);
+        @include flex(
+          $direction: column,
+          $gap: 16px,
+          $justify: center,
+          $align: center
+        );
         .content-title {
           @include flex($direction: column);
           span:nth-of-type(2) {
@@ -39,9 +44,9 @@
           }
           .team-btn {
             @include flex($align: center, $justify: center);
-            font-size: pxToRem(16);
+            font-size: 16px;
             font-weight: 500;
-            letter-spacing: pxToRem(0.5);
+            letter-spacing: 0.5px;
             padding: 16px 12px;
             max-height: 48px;
             height: auto;
@@ -57,6 +62,9 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       justify-items: center;
+      figure {
+        height: auto;
+      }
     }
   }
 
@@ -68,7 +76,12 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       justify-items: center;
-      gap: 48px;
+      gap: 16px;
+      .team-card {
+        figure {
+          height: 100%;
+        }
+      }
     }
   }
 }

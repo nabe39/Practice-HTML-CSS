@@ -39,11 +39,11 @@
           .author-detail {
             @include flex($direction: column);
             b {
-              line-height: pxToRem(17.6);
+              line-height: 17.6px;
             }
             p {
               color: #697077;
-              line-height: pxToRem(22.4);
+              line-height: 22.4px;
             }
           }
         }
