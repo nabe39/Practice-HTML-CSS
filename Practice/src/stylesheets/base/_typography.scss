@@ -14,11 +14,11 @@ body {
   background-color: $background-color;
 
   @include tablet {
-    font-size: 11px;
+    font-size: 14px;
     line-height: 16px;
   }
   @include mobile {
-    font-size: 11px;
+    font-size: 14px;
     line-height: 16px;
   }
 }
