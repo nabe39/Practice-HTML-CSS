@@ -11,6 +11,7 @@
       padding: 0;
       border: 1px solid #dde1e6;
       .img-placeholder {
+        height: auto;
         img {
           width: 100%;
           max-height: 220px;
@@ -47,6 +48,12 @@
             }
           }
         }
+      }
+    }
+    @include desktop {
+      .blog-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       }
     }
   }
