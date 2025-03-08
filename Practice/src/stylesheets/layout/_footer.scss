@@ -24,7 +24,8 @@ footer {
       width: 100%;
       .input-container {
         position: relative;
-        width: 50%;
+        width: 100%;
+        max-width: 317px;
         height: 48px;
         @include flex($align: flex-end);
         input {
