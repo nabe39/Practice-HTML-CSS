@@ -23,6 +23,13 @@
         font-weight: 700;
         line-height: 22px;
       }
+      transition: all 0.3s ease;
+    }
+    @include desktop {
+      .question-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+      }
     }
   }
 
@@ -30,11 +37,11 @@
     padding: 48px 16px;
     gap: 32px;
   }
-  @include mobile{
+  @include mobile {
     padding: 48px 16px;
     gap: 32px;
-    .container-questions{
-        width: 100%;
+    .container-questions {
+      width: 100%;
     }
   }
 }

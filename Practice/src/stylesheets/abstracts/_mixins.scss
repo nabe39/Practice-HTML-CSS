@@ -13,6 +13,12 @@
   }
 }
 
+@mixin desktop{
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
 // Flex
 @mixin flex(
   $display: flex,
