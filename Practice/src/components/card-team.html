@@ -1,11 +1,9 @@
 <each loop="item in {{list}}">
   <div class="team-card card">
-    <figure class="avatar-member">
-      <picture>
-        <source srcset="{{item.srcMobile}}" media="(max-width: 500px)" />
-        <img src="{{item.cardImage}}" alt="{{item.cardName}}" />
-      </picture>
-    </figure>
+    <picture class="avatar-member">
+      <source srcset="{{item.srcMobile}}" media="(max-width: 500px)" />
+      <img src="{{item.cardImage}}" alt="{{item.cardName}}" />
+    </picture>
     <div class="container-context-team">
       <div class="content-title">
         <span>{{item.nameMember}}</span>
