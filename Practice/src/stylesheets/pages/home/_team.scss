@@ -4,7 +4,7 @@
 .team {
   @include flex($direction: column, $gap: 64px);
   background-color: $second-color;
-  .team-cards {
+  &-cards {
     gap: 16px;
     .team-card {
       @include flex($direction: column, $align: center);
